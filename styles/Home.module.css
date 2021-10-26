@@ -1,11 +1,106 @@
-.homeContainer {
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+.headerContainer {
+}
+
+.header {
+  position: absolute;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  text-align: center;
+  font-size: 72px;
+  letter-spacing: 2px;
+  color: rgba(24, 24, 24, 0.65);
+  font-family: "Roboto";
+  font-weight: normal;
+  text-transform: uppercase;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+.img {
+  display: flex;
 }
 
 .img img {
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+}
+
+.footer {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 200px;
+  background-color: #312f2f;
+  filter: drop-shadow(0 -4px 4px rgba(0, 0, 0, 0.35));
+  overflow: hidden;
+}
+
+.footer h2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d0cfcf;
+  font-family: "Roboto";
+  font-weight: normal;
+}
+
+.footer h2:before,
+.footer h2:after {
+  content: "";
+  border-bottom: solid 2px #d0cfcf;
+  margin: 0 20px 0 15px;
+  flex: 1 0 20px;
+}
+
+.mediaIconsContainer {
+  border-bottom: solid 2px #d0cfcf;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 25%;
+}
+
+.githubIcon {
+  color: #d0cfcf;
+  font-size: 50px;
+  border-radius: 10px;
+  background-color: rgb(67, 116, 180);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  padding: 4px;
+}
+
+.codepenIcon {
+  color: #d0cfcf;
+  font-size: 50px;
+  border-radius: 10px;
+  background-color: rgb(74, 134, 111);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  padding: 4px;
+}
+
+.freeCodeCampIcon {
+  color: #d0cfcf;
+  font-size: 50px;
+  border-radius: 10px;
+  background-color: rgb(165, 103, 62);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  padding: 4px;
+}
+
+.instagramIcon {
+  color: #d0cfcf;
+  font-size: 50px;
+  border-radius: 10px;
+  background-color: rgb(165, 59, 130);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  padding: 4px;
+}
+
+.emailIcon {
+  color: #d0cfcf;
+  font-size: 50px;
+  border-radius: 10px;
+  background-color: rgb(177, 65, 65);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  padding: 4px;
 }
