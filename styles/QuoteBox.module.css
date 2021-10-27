@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
+@import url(http://fonts.googleapis.com/css?family=Tangerine);
+
+.quoteBox {
+  width: 400px;
+  height: 150px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(104, 104, 104, 0.25);
+}
+
+.quote {
+  font-family: "Oleo Script";
+  font-size: 18px;
+  padding: 20px 50px 15px 35px;
+}
+
+.author {
+  font-family: "Tangerine";
+  font-size: 18px;
+  padding-left: 35px;
+}
+
+.quoteBox:nth-child(1) {
+}
+
+.quoteBox:nth-child(2) {
+}
+
+.quoteBox:nth-child(3) {
+}
+
+.quoteBox:nth-child(4) {
+}
+
+.quoteBox:nth-child(5) {
+}
+
+.quoteBox:nth-child(6) {
+}
