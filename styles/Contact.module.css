@@ -1,10 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
 .img {
   display: flex;
+  background-color: rgb(36, 36, 36);
+  z-index: -1;
 }
 
 .img img {
   width: 100vw;
+  opacity: 15%;
 }
 
 .pageContent {
+  display: grid;
+  position: absolute;
+  margin-top: 90px;
+  z-index: 1;
+  font-family: "Roboto";
+}
+
+.header {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.pageContent p {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+}
+
+.pageContent textarea {
+  width: 750px;
+  height: 275px;
+  background-color: rgba(36, 36, 36, 0.95);
+  border-radius: 5px;
+}
+
+.inputs {
+  width: 600px;
+  height: 75px;
+  background-color: rgba(36, 36, 36, 0.95);
+  border-radius: 5px;
+}
+
+.sendButton {
+  width: 400px;
+  height: 75px;
+  font-family: "Roboto";
+  font-size: 36px;
+  text-transform: uppercase;
+  background-color: #57ce78;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
 }
