@@ -7,28 +7,38 @@ export default function contact() {
   return (
     <div>
       <div className={s.pageContent}>
-        <h1 className={s.header}>Have a request?</h1>
-        <div>
-          <p>
-            Drop your suggestions for landscapes that should be added to the
-            library
-          </p>
-          <textarea placeholder="Type request here..."></textarea>
+        <div className={s.headerContainer}>
+          <h1 className={s.header}>Have a request?</h1>
         </div>
-        <div>
-          <input
-            type="text"
-            placeholder="Name here..."
-            className={s.inputs}
-          ></input>
-          <input
-            type="text"
-            placeholder="Email here..."
-            className={s.inputs}
-          ></input>
+        <div className={s.requestSection}>
+          <div className={s.paragraphContainer}>
+            <div className={s.paragraph}>
+              <p>
+                Drop your suggestions for landscapes that should be added to the
+                library
+              </p>
+            </div>
+          </div>
+          <div className={s.textareaContainer}>
+            <textarea placeholder="Type request here..."></textarea>
+          </div>
         </div>
-        <div>
-          <button className={s.sendButton}>Send</button>
+        <div className={s.inputSection}>
+          <div className={s.inputsContainer}>
+            <input
+              type="text"
+              placeholder="Name here..."
+              className={s.inputs}
+            ></input>
+            <input
+              type="text"
+              placeholder="Email here..."
+              className={s.inputs}
+            ></input>
+          </div>
+          <div className={s.sendButtonContainer}>
+            <button className={s.sendButton}>Send</button>
+          </div>
         </div>
       </div>
       <div className={s.img}>

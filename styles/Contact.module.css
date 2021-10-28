@@ -12,23 +12,65 @@
 }
 
 .pageContent {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
-  margin-top: 90px;
+  margin-top: 65px;
   z-index: 1;
   font-family: "Roboto";
 }
 
+.headerContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 .header {
+  justify-content: start;
+  width: 990px;
   color: rgb(255, 255, 255);
   font-size: 64px;
   text-transform: uppercase;
   font-weight: normal;
 }
 
-.pageContent p {
+.header:after {
+  content: "";
+  display: flex;
+  border-bottom: solid 3px rgb(255, 255, 255);
+}
+
+.requestSection {
+  display: flex;
+}
+
+.paragraphContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.paragraph {
+  display: flex;
+  justify-content: flex-end;
+  width: 450px;
+  height: 168px;
+  border-bottom: solid 3px rgb(255, 255, 255);
+  margin: auto 95px auto auto;
+}
+
+.paragraph p {
   color: rgb(255, 255, 255);
   font-size: 36px;
+  width: 420px;
+  text-align: center;
+}
+
+.textareaContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .pageContent textarea {
@@ -36,6 +78,26 @@
   height: 275px;
   background-color: rgba(36, 36, 36, 0.95);
   border-radius: 5px;
+  padding: 10px;
+  margin: 50px 145px auto auto;
+  border: none;
+  resize: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+  justify-content: flex-end;
+}
+
+.inputSection {
+  display: flex;
+  height: 225px;
+  margin-top: 130px;
+}
+
+.inputsContainer {
+  margin-left: 175px;
+  margin-bottom: 55px;
 }
 
 .inputs {
@@ -43,6 +105,18 @@
   height: 75px;
   background-color: rgba(36, 36, 36, 0.95);
   border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 75px;
+  border: none;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+.sendButtonContainer {
+  display: flex;
+  align-items: center;
 }
 
 .sendButton {
@@ -54,5 +128,8 @@
   background-color: #57ce78;
   color: rgb(255, 255, 255);
   border-radius: 5px;
+  margin-right: 145px;
+  border: none;
   cursor: pointer;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
 }

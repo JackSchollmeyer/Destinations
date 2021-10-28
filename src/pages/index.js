@@ -16,7 +16,7 @@ export default function Home() {
     <div>
       <h1 className={s.header}>discover the world</h1>
       <div className={s.img}>
-        <Image src={Background} alt="Lake Between Mountains" />
+        <Image src={Background} alt="Rocky Island" />
       </div>
       <div className={s.quoteBox}>
         <QuoteBox
