@@ -31,3 +31,16 @@
   font-family: "Roboto";
   text-transform: uppercase;
 }
+
+.sidebarContainer {
+  width: 100vw;
+  border: solid orange;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: fixed;
+  background-color: green;
+}

@@ -14,8 +14,7 @@ export default function contact() {
           <div className={s.paragraphContainer}>
             <div className={s.paragraph}>
               <p>
-                Drop your suggestions for landscapes that should be added to the
-                library
+                What landscapes do you think should be added to the library?
               </p>
             </div>
           </div>
