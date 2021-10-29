@@ -3,7 +3,7 @@
 
 .navbar {
   display: flex;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -33,14 +33,38 @@
 }
 
 .sidebarContainer {
-  width: 100vw;
-  border: solid orange;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .sidebar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   position: fixed;
-  background-color: green;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(49, 47, 47, 0.8);
+  color: #d0cfcf;
+  z-index: 2;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.navText {
+  list-style: none;
+  font-size: 24px;
+}
+
+.navText:hover {
+  color: green;
+}
+
+.navText span {
+  margin-left: 10px;
 }
