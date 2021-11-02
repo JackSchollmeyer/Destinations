@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import s from "../../styles/Navbar.module.css";
 import { useRouter } from "next/router";
-import { SidebarData } from "./Sidebar";
+import { SidebarData } from "./SidebarData";
 
 export default function Navbar({ children }) {
   const [sidebar, setSidebar] = useState(false);
@@ -36,7 +36,7 @@ export default function Navbar({ children }) {
 
   const router = useRouter();
   const setNavbarStyle = () => {
-    if (router.pathname !== "/tropical") {
+    if (router.pathname !== "/dryland") {
       return { position: "fixed" };
     }
   };
@@ -57,7 +57,7 @@ export default function Navbar({ children }) {
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href="" scroll={false}>
               <a onClick={toggleSidebar}>Explore</a>
             </Link>
           </li>

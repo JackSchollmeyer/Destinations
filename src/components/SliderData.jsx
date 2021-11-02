@@ -3,7 +3,7 @@ import Image from "next/image";
 import s from "../../styles/Tropical.module.css";
 import SeychellesIslands from "../public/tropical/SeychellesIslands.jpg";
 import AmazonRainforest from "../public/tropical/amazonRainforest.jpg";
-import KaieteurFalls from "../public/tropical/kaieteurFalls.jpg";
+import NiagaraFalls from "../public/tropical/niagaraFalls.jpg";
 import CookIslands from "../public/tropical/cookIslands.jpg";
 import PhiPhiIslands from "../public/tropical/phiphiIslands.jpg";
 import WhitsundayIsland from "../public/tropical/whitsundayIsland.jpg";
@@ -12,51 +12,51 @@ import KhaoPhingKan from "../public/tropical/khaoPhingKan.jpg";
 
 export const SliderData = [
   {
-    image: (
-      <Image
-        className={s.image}
-        src={SeychellesIslands}
-        alt="Seychelles Islands"
-      />
-    ),
+    image: <Image src={SeychellesIslands} alt="Seychelles Islands" />,
+    title: "Seychelles Islands",
+    info: "",
+    location: "",
   },
   {
-    image: (
-      <Image
-        className={s.image}
-        src={AmazonRainforest}
-        alt="Amazon Rainforest"
-      />
-    ),
+    image: <Image src={AmazonRainforest} alt="Amazon Rainforest" />,
+    title: "Amazon Rainforest",
+    info: "",
+    location: "",
   },
   {
-    image: (
-      <Image className={s.image} src={KaieteurFalls} alt="Kaieteur Falls" />
-    ),
+    image: <Image src={NiagaraFalls} alt="Niagara Falls" />,
+    title: "Niagara Falls",
+    info: "",
+    location: "",
   },
   {
-    image: <Image className={s.image} src={CookIslands} alt="Cook Islands" />,
+    image: <Image src={CookIslands} alt="Cook Islands" />,
+    title: "Cook Islands",
+    info: "",
+    location: "",
   },
   {
-    image: (
-      <Image className={s.image} src={PhiPhiIslands} alt="Phi Phi Islands" />
-    ),
+    image: <Image src={PhiPhiIslands} alt="Phi Phi Islands" />,
+    title: "Phi Phi Islands",
+    info: "",
+    location: "",
   },
   {
-    image: (
-      <Image
-        className={s.image}
-        src={WhitsundayIsland}
-        alt="Whitsunday Island"
-      />
-    ),
+    image: <Image src={WhitsundayIsland} alt="Whitsunday Island" />,
+    title: "Whitsunday Island",
+    info: "",
+    location: "",
   },
   {
-    image: <Image className={s.image} src={TheAzores} alt="The Azores" />,
+    image: <Image src={TheAzores} alt="The Azores" />,
+    title: "The Azores",
+    info: "",
+    location: "",
   },
   {
-    image: (
-      <Image className={s.image} src={KhaoPhingKan} alt="Khao Phing Kan" />
-    ),
+    image: <Image src={KhaoPhingKan} alt="Khao Phing Kan" />,
+    title: "Khao Phing Kan",
+    info: "",
+    location: "",
   },
 ];
