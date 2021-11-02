@@ -96,6 +96,10 @@
 }
 
 .inputsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
   margin-left: 175px;
   margin-bottom: 55px;
 }
@@ -106,7 +110,6 @@
   background-color: rgba(36, 36, 36, 0.95);
   border-radius: 5px;
   padding-left: 10px;
-  margin-bottom: 75px;
   border: none;
   font-size: 18px;
   color: rgb(255, 255, 255);
@@ -117,6 +120,7 @@
 .sendButtonContainer {
   display: flex;
   align-items: center;
+  margin-left: 120px;
 }
 
 .sendButton {
@@ -128,7 +132,6 @@
   background-color: #57ce78;
   color: rgb(255, 255, 255);
   border-radius: 5px;
-  margin-right: 145px;
   border: none;
   cursor: pointer;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));

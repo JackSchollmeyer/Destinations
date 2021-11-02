@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Background from "../public/calmWoods.jpg";
 import s from "../../styles/Contact.module.css";
+import { Fisend } from "react-icons/fi";
 
 export default function contact() {
   return (

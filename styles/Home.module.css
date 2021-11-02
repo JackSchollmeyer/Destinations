@@ -31,25 +31,31 @@
   height: 600px;
 }
 
+.featuredSection {
+}
+
 .footer {
   width: 100%;
   height: 200px;
   background-color: rgb(37, 37, 37);
-  /* filter: drop-shadow(0 -4px 4px rgba(0, 0, 0, 0.35)); */
   overflow: hidden;
 }
 
-.footer h2 {
+.mediaSection {
+  width: 50%;
+  height: 100%;
+}
+
+.mediaSection h2 {
   display: flex;
   align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #575757;
   font-family: "Roboto";
   font-weight: normal;
 }
 
-.footer h2:before,
+.mediaSection h2:before,
 .footer h2:after {
   content: "";
   border-bottom: solid 2px #575757;
@@ -58,33 +64,50 @@
 }
 
 .mediaIconsContainer {
-  border-bottom: solid 2px #575757;
-  padding: 20px 0;
   display: flex;
   justify-content: space-around;
-  margin: 0 25%;
+  width: 100%;
+  border-bottom: solid 2px #575757;
+  padding: 20px 0;
 }
 
 .githubIcon {
-  color: #d0cfcf;
+  color: rgb(37, 37, 37);
   font-size: 50px;
   border-radius: 10px;
-  background-color: rgb(67, 116, 180);
+  background-color: rgb(105, 140, 185);
   filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
   padding: 4px;
 }
 
 .codepenIcon {
-  color: #d0cfcf;
+  color: rgb(37, 37, 37);
   font-size: 50px;
   border-radius: 10px;
-  background-color: rgb(74, 134, 111);
+  background-color: rgb(131, 103, 163);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  padding: 4px;
+}
+
+.instagramIcon {
+  color: rgb(37, 37, 37);
+  font-size: 50px;
+  border-radius: 10px;
+  background: linear-gradient(
+    30deg,
+    #ffdc80,
+    #f77737,
+    #e1306c,
+    #c13584,
+    #833ab4,
+    #5851d8
+  );
   filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
   padding: 4px;
 }
 
 .freeCodeCampIcon {
-  color: #d0cfcf;
+  color: rgb(37, 37, 37);
   font-size: 50px;
   border-radius: 10px;
   background-color: rgb(165, 103, 62);
@@ -92,20 +115,18 @@
   padding: 4px;
 }
 
-.instagramIcon {
-  color: #d0cfcf;
-  font-size: 50px;
-  border-radius: 10px;
-  background-color: rgb(165, 59, 130);
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
-  padding: 4px;
-}
-
 .emailIcon {
-  color: #d0cfcf;
+  color: rgb(37, 37, 37);
   font-size: 50px;
   border-radius: 10px;
   background-color: rgb(177, 65, 65);
   filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
   padding: 4px;
+}
+
+.codewarsIcon {
+  color: rgb(177, 65, 65);
+  font-size: 50px;
+  border-radius: 10px;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
 }

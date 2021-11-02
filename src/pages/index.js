@@ -17,6 +17,7 @@ export default function Home() {
       <div className={s.img}>
         <Image src={Background} alt="Rocky Island" />
       </div>
+
       <div className={s.quoteBox}>
         <QuoteBox
           quote="In all things of nature there is something of the marvelous."
@@ -43,26 +44,32 @@ export default function Home() {
           author="Laura Ingalls Wilder"
         />
       </div>
+      <div className={s.featuredSection}>
+        <h1>Check out our most visited locations</h1>
+        <div></div>
+      </div>
       <footer className={s.footer}>
-        <h2>you can find me at</h2>
-        <div className={s.mediaIconsContainer}>
-          <div>
-            <FaGithub className={s.githubIcon} />
-          </div>
-          <div>
-            <FaCodepen className={s.codepenIcon} />
-          </div>
-          <div>
-            <SiFreecodecamp className={s.freeCodeCampIcon} />
-          </div>
-          <div>
-            <SiInstagram className={s.instagramIcon} />
-          </div>
-          <div>
-            <SiGmail className={s.emailIcon} />
-          </div>
-          <div>
-            <SiCodewars className={s.emailIcon} />
+        <div className={s.mediaSection}>
+          <h2>you can find me at</h2>
+          <div className={s.mediaIconsContainer}>
+            <div>
+              <FaGithub className={s.githubIcon} />
+            </div>
+            <div>
+              <FaCodepen className={s.codepenIcon} />
+            </div>
+            <div>
+              <SiInstagram className={s.instagramIcon} />
+            </div>
+            <div>
+              <SiFreecodecamp className={s.freeCodeCampIcon} />
+            </div>
+            <div>
+              <SiGmail className={s.emailIcon} />
+            </div>
+            <div>
+              <SiCodewars className={s.codewarsIcon} />
+            </div>
           </div>
         </div>
       </footer>
