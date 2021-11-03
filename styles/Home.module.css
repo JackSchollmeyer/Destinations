@@ -34,99 +34,116 @@
 .featuredSection {
 }
 
+/*FOOTER SECTION*/
+
 .footer {
   width: 100%;
-  height: 200px;
-  background-color: rgb(37, 37, 37);
+  height: 300px;
+  background-color: rgb(22, 22, 22);
   overflow: hidden;
 }
 
+.footerContent {
+  display: flex;
+  width: 100%;
+}
+
 .mediaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
   height: 100%;
+  margin-top: 20px;
 }
 
 .mediaSection h2 {
-  display: flex;
-  align-items: center;
+  width: fit-content;
   text-transform: uppercase;
-  color: #575757;
+  color: #d0cfcf;
   font-family: "Roboto";
   font-weight: normal;
-}
-
-.mediaSection h2:before,
-.footer h2:after {
-  content: "";
-  border-bottom: solid 2px #575757;
-  margin: 0 20px 0 15px;
-  flex: 1 0 20px;
+  font-size: 28px;
+  padding: 0 5px;
+  border: solid 2px rgb(133, 48, 48);
+  border-radius: 2px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
 }
 
 .mediaIconsContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
-  border-bottom: solid 2px #575757;
-  padding: 20px 0;
 }
 
-.githubIcon {
-  color: rgb(37, 37, 37);
-  font-size: 50px;
-  border-radius: 10px;
-  background-color: rgb(105, 140, 185);
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
-  padding: 4px;
+.mediaIconsContainer span {
+  color: rgb(35, 35, 35);
+  font-size: 75px;
+  font-weight: lighter;
 }
 
-.codepenIcon {
-  color: rgb(37, 37, 37);
-  font-size: 50px;
-  border-radius: 10px;
-  background-color: rgb(131, 103, 163);
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
-  padding: 4px;
+.githubIcons {
+  color: rgb(80, 80, 80);
+  font-size: 35px;
+  margin-top: 12px;
 }
 
-.instagramIcon {
-  color: rgb(37, 37, 37);
-  font-size: 50px;
-  border-radius: 10px;
-  background: linear-gradient(
-    30deg,
-    #ffdc80,
-    #f77737,
-    #e1306c,
-    #c13584,
-    #833ab4,
-    #5851d8
-  );
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
-  padding: 4px;
+.codepenIcons {
+  color: rgb(80, 80, 80);
+  font-size: 35px;
+  margin-top: 12px;
 }
 
-.freeCodeCampIcon {
-  color: rgb(37, 37, 37);
-  font-size: 50px;
-  border-radius: 10px;
-  background-color: rgb(165, 103, 62);
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
-  padding: 4px;
+.instagramIcons {
+  color: rgb(80, 80, 80);
+  font-size: 35px;
+  margin-top: 12px;
 }
 
-.emailIcon {
-  color: rgb(37, 37, 37);
-  font-size: 50px;
-  border-radius: 10px;
-  background-color: rgb(177, 65, 65);
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
-  padding: 4px;
+.freeCodeCampIcons {
+  color: rgb(80, 80, 80);
+  font-size: 35px;
+  margin-top: 12px;
+}
+
+.gmailIcons {
+  color: rgb(80, 80, 80);
+  font-size: 35px;
+  margin-top: 12px;
 }
 
 .codewarsIcon {
-  color: rgb(177, 65, 65);
-  font-size: 50px;
-  border-radius: 10px;
-  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+  color: rgb(80, 80, 80);
+  font-size: 35px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.githubIcons:hover {
+  color: rgb(102, 134, 194);
+}
+
+.codepenIcons:hover {
+  color: rgb(118, 98, 136);
+}
+
+.instagramIcons:hover {
+  color: rgb(197, 92, 171);
+}
+
+.freeCodeCampIcons:hover {
+  color: rgb(165, 103, 62);
+}
+
+.gmailIcons:hover {
+  color: rgb(231, 43, 43);
+}
+
+.codewarsIcon:hover {
+  color: rgb(177, 62, 54);
+}
+
+.copyrightContainer {
+  text-align: center;
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Background from "../public/rockyIsland.jpg";
 import s from "../../styles/Home.module.css";
 import QuoteBox from "../components/QuoteBoxMachine";
@@ -49,28 +50,65 @@ export default function Home() {
         <div></div>
       </div>
       <footer className={s.footer}>
-        <div className={s.mediaSection}>
-          <h2>you can find me at</h2>
-          <div className={s.mediaIconsContainer}>
-            <div>
-              <FaGithub className={s.githubIcon} />
-            </div>
-            <div>
-              <FaCodepen className={s.codepenIcon} />
-            </div>
-            <div>
-              <SiInstagram className={s.instagramIcon} />
-            </div>
-            <div>
-              <SiFreecodecamp className={s.freeCodeCampIcon} />
-            </div>
-            <div>
-              <SiGmail className={s.emailIcon} />
-            </div>
-            <div>
-              <SiCodewars className={s.codewarsIcon} />
+        <div className={s.footerContent}>
+          <div className={s.mediaSection}>
+            <h2>you can find me at</h2>
+            <div className={s.mediaIconsContainer}>
+              <div>
+                <Link href="https://github.com/">
+                  <a target="_blank">
+                    <FaGithub className={s.githubIcons} />
+                  </a>
+                </Link>
+              </div>
+              <span>/</span>
+              <div>
+                <Link href="https://codepen.io/">
+                  <a target="_blank">
+                    <FaCodepen className={s.codepenIcons} />
+                  </a>
+                </Link>
+              </div>
+              <span>/</span>
+              <div>
+                <Link href="https://www.instagram.com/">
+                  <a target="_blank">
+                    <SiInstagram className={s.instagramIcons} />
+                  </a>
+                </Link>
+              </div>
+              <span>/</span>
+              <div>
+                <Link href="https://www.freecodecamp.org/">
+                  <a target="_blank">
+                    <SiFreecodecamp className={s.freeCodeCampIcons} />
+                  </a>
+                </Link>
+              </div>
+              <span>/</span>
+              <div>
+                <Link href="https://accounts.google.com/">
+                  <a target="_blank">
+                    <SiGmail className={s.gmailIcons} />
+                  </a>
+                </Link>
+              </div>
+              <span>/</span>
+              <div>
+                <Link href="https://www.codewars.com/">
+                  <a target="_blank">
+                    <SiCodewars className={s.codewarsIcon} />
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
+          <div>
+            <h1>Content</h1>
+          </div>
+        </div>
+        <div className={s.copyrightContainer}>
+          <h2>copyright</h2>
         </div>
       </footer>
     </div>
