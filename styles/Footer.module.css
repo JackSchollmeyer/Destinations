@@ -17,21 +17,21 @@
   flex-direction: column;
   align-items: center;
   width: 50%;
-  height: 100%;
   margin-top: 20px;
 }
 
 .mediaSection h2 {
   width: fit-content;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #d0cfcf;
   font-family: "Roboto";
   font-weight: normal;
-  font-size: 28px;
+  font-size: 30px;
   padding: 0 5px;
-  border: solid 2px rgb(133, 48, 48);
-  border-radius: 2px;
+  border-bottom: solid 2px rgb(133, 48, 48);
+  border-top: solid 2px rgb(133, 48, 48);
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+  cursor: default;
 }
 
 .mediaIconsContainer {
@@ -45,6 +45,7 @@
   color: rgb(35, 35, 35);
   font-size: 75px;
   font-weight: lighter;
+  cursor: default;
 }
 
 .githubIcons {
@@ -110,22 +111,40 @@
 
 .infoSection {
   display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-top: 20px;
+  cursor: default;
 }
 
-.infoContainers {
-  border: solid;
+.infoContainers h2 {
+  text-align: center;
+  width: fit-content;
+  font-weight: normal;
+  color: #d0cfcf;
+  font-family: "Roboto";
+  border-bottom: solid 2px rgb(133, 48, 48);
+  border-top: solid 2px rgb(133, 48, 48);
+  padding: 1px 5px;
 }
 
 .infoContainers ul {
   list-style: none;
   padding-left: 0;
-  color: white;
+  color: rgb(100, 100, 100);
+  font-family: "Roboto";
+}
+
+.infoContainers li {
+  margin-bottom: 5px;
 }
 
 .copyrightContainer {
   display: flex;
   align-items: center;
   width: fit-content;
-  color: rgb(0, 0, 0);
+  color: rgb(35, 35, 35);
+  font-family: "Roboto";
   margin-left: 20px;
+  cursor: default;
 }
