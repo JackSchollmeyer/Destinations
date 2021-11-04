@@ -22,15 +22,13 @@
 
 .mediaSection h2 {
   width: fit-content;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #d0cfcf;
   font-family: "Roboto";
   font-weight: normal;
   font-size: 30px;
-  padding: 0 5px;
-  border-bottom: solid 2px rgb(133, 48, 48);
-  border-top: solid 2px rgb(133, 48, 48);
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+  border-bottom: solid 2px;
+  border-top: solid 2px;
   cursor: default;
 }
 
@@ -123,9 +121,7 @@
   font-weight: normal;
   color: #d0cfcf;
   font-family: "Roboto";
-  border-bottom: solid 2px rgb(133, 48, 48);
-  border-top: solid 2px rgb(133, 48, 48);
-  padding: 1px 5px;
+  border-top: solid 2px;
 }
 
 .infoContainers ul {

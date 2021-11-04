@@ -23,11 +23,3 @@
   height: auto;
   z-index: -1;
 }
-
-.quoteBox {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 600px;
-  background-color: rgb(43, 43, 43);
-}

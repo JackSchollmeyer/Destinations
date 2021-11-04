@@ -1,5 +1,5 @@
 import React from "react";
-import s from "../../styles/QuoteBox.module.css";
+import s from "../../../styles/HomepageStyles/QuoteBoxCarousel.module.css";
 
 export default function QuoteBoxMachine({ quote, author }) {
   return (

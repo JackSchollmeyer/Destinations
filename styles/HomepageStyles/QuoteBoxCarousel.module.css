@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script");
 @import url(http://fonts.googleapis.com/css?family=Tangerine);
 
+.carouselSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  height: 600px;
+}
+
+.quoteBoxesContainer {
+  border: solid;
+  width: 800px;
+}
+
 .quoteBox {
-  width: 400px;
-  height: 150px;
+  width: 600px;
+  height: 225px;
   color: rgba(0, 0, 0, 0.7);
   background-color: rgba(104, 104, 104, 0.25);
 }
