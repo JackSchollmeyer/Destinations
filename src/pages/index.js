@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Background from "../public/rockyIsland.jpg";
-import s from "../../styles/Home.module.css";
+import s from "../../styles/HomepageStyles/Home.module.css";
 import QuoteBox from "../components/QuoteBoxMachine";
-import Footer from "../components/Footer";
+import Footer from "../components/HomepageComponents/Footer";
+import FeaturedSection from "../components/HomepageComponents/FeaturedSection";
+import Background from "../public/rockyIsland.jpg";
 
 export default function Home() {
   return (
@@ -38,10 +39,7 @@ export default function Home() {
           author="Laura Ingalls Wilder"
         />
       </div>
-      <div className={s.featuredSection}>
-        <h1>Check out our most visited locations</h1>
-        <div></div>
-      </div>
+      <FeaturedSection />
       <Footer />
     </div>
   );

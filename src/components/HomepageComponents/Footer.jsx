@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import s from "../../styles/Footer.module.css";
+import s from "../../../styles/HomepageStyles/Footer.module.css";
 import { BiCopyright } from "react-icons/bi";
 import { FaGithub, FaCodepen } from "react-icons/fa";
 import {
