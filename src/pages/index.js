@@ -8,9 +8,25 @@ import Background from "../public/rockyIsland.jpg";
 export default function Home() {
   return (
     <div>
-      <h1 className={s.header}>discover the world</h1>
-      <div className={s.img}>
-        <Image src={Background} alt="Rocky Island" />
+      <div>
+        <div className={s.homeContainer}>
+          <div className={s.headerContainer}>
+            <h1 className={s.header}>
+              Welcome to <span>Destinations</span>
+            </h1>
+            <h2>Discover Gods amazing creation</h2>
+          </div>
+          <div className={s.purposeContainer}>
+            <h2>Purpose</h2>
+            <p>
+              My goal is to give others the chance to explore & learn about the
+              fascinating landscapes in the world.
+            </p>
+          </div>
+        </div>
+        <div className={s.img}>
+          <Image src={Background} alt="Rocky Island" />
+        </div>
       </div>
       <QuoteBoxCarousel />
       <FeaturedSection />

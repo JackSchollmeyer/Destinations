@@ -52,10 +52,15 @@ export default function ImageSlider({ slides }) {
           return (
             <div key={index}>
               {index === current && (
-                <div>
-                  <h1>{item.title}</h1>
-                  <p>{item.info}</p>
-                  <h2>{item.location}</h2>
+                <div className={s.infoSection}>
+                  <div className={s.infoContainer}>
+                    <h1>{item.title}</h1>
+                    <p>{item.info}</p>
+                  </div>
+                  <div className={s.locationContainer}>
+                    <h2>Location</h2>
+                    <p>{item.location}</p>
+                  </div>
                 </div>
               )}
             </div>

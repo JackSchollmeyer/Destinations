@@ -56,7 +56,7 @@ export const SliderData = [
   {
     image: <Image src={KhaoPhingKan} alt="Khao Phing Kan" />,
     title: "Khao Phing Kan",
-    info: "",
-    location: "",
+    info: "Before 1974, the island was a rarely visited indigenous area. However, it was the location for the 1974 James Bond film “The Man with the Golden Gun” as the hideout for Bond's antagonist, Francisco Scaramanga. After the movie release it turned into a popular tourist destination.In 1981, the island became the most famous part of the newly established Ao Phang Nga Marine National Park.",
+    location: "Phuket, Thailand",
   },
 ];

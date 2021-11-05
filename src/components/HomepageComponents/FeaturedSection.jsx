@@ -12,7 +12,7 @@ export default function FeaturedSection() {
   return (
     <div>
       <div className={s.featuredSection}>
-        <h1>Check out the most visited locations!</h1>
+        <h1>Take a look at the new Destinations!</h1>
         <div className={s.imgSection}>
           <div className={s.sectionContainers}>
             <Link href="/tropical">
