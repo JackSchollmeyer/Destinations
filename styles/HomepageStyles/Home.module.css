@@ -3,7 +3,7 @@
 
 .homeContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   position: absolute;
   width: 100%;
 }
@@ -36,13 +36,6 @@
   font-family: "Roboto";
   font-weight: normal;
   margin-top: 10px;
-}
-
-.purposeContainer {
-  display: flex;
-  flex-direction: column;
-  border: solid;
-  align-items: center;
 }
 
 .backgroundTriangle {
