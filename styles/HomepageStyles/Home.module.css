@@ -1,28 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
 .homeContainer {
   display: flex;
   flex-direction: column;
   position: absolute;
-  border: solid;
   width: 100%;
-  height: 100%;
 }
 
 .headerContainer {
   display: flex;
   flex-direction: column;
-  border: solid;
   align-items: center;
+  padding-top: 15%;
 }
 
 .header {
-  font-size: 92px;
+  font-size: 96px;
   color: rgb(255, 255, 255);
   font-family: "Roboto";
-  font-weight: bolder;
-  text-transform: uppercase;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.header span {
+  font-family: "Oleo Script";
+  font-size: 84px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.headerContainer h2 {
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-weight: normal;
+  margin-top: 10px;
 }
 
 .purposeContainer {
@@ -32,13 +45,38 @@
   align-items: center;
 }
 
+.backgroundTriangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: -25%;
+  top: -35%;
+  transform: rotate(-35deg);
+  background-color: rgba(17, 17, 17, 0.7);
+  z-index: -1;
+}
+
 .img {
   display: flex;
 }
 
 .img img {
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  filter: brightness(70%);
+  z-index: -2;
+  filter: brightness(55%);
+  opacity: 0.9;
+}
+
+@media (min-width: 1600px) {
+  .headerContainer {
+    padding-top: 12%;
+  }
+  .header {
+    font-size: 132px;
+  }
+  .header span {
+    font-size: 120px;
+  }
+  .headerContainer h2 {
+    font-size: 48px;
+  }
 }
