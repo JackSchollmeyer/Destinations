@@ -22,13 +22,10 @@
 
 .mediaSection h2 {
   width: fit-content;
-  text-transform: uppercase;
   color: #d0cfcf;
   font-family: "Roboto";
   font-weight: normal;
-  font-size: 30px;
-  border-bottom: solid 2px;
-  border-top: solid 2px;
+  font-size: 36px;
   cursor: default;
 }
 

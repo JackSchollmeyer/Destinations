@@ -15,7 +15,7 @@ export default function GoalSection() {
             <h3>To reveal</h3>
             <p>
               Bring to light new and astonishing locations that will blow you
-              away with their magnificence.
+              away.
             </p>
           </div>
           <div className={s.illustrations}>

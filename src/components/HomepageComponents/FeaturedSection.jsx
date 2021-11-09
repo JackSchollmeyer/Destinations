@@ -12,9 +12,9 @@ export default function FeaturedSection() {
   return (
     <div>
       <div className={s.featuredSection}>
-        <h1>Take a look at what's new to the library!</h1>
+        <h1 className={s.header}>Take a look at what's new to the library!</h1>
         <div className={s.imgSection}>
-          <div className={s.sectionContainers}>
+          <div className={s.imgSectionContainers}>
             <Link href="/tropical">
               <a className={s.img}>
                 <Image src={TheAzores} alt="The Azores" />
@@ -25,20 +25,6 @@ export default function FeaturedSection() {
               <a className={s.img}>
                 <Image src={KhaoPhingKan} alt="Khao Phing Kan" />
                 <label>Khao Phing Kan</label>
-              </a>
-            </Link>
-            <Link href="/tropical">
-              <a className={s.img}>
-                <Image src={CookIslands} alt="Cook Islands" />
-                <label>Cook Islands</label>
-              </a>
-            </Link>
-          </div>
-          <div className={s.sectionContainers}>
-            <Link href="/tropical">
-              <a className={s.img}>
-                <Image src={SeychellesIslands} alt="Seychelles Islands" />
-                <label>Seychelles Islands</label>
               </a>
             </Link>
             <Link href="/tropical">

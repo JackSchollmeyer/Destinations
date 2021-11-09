@@ -2,13 +2,14 @@
 
 .featuredSection {
   overflow: hidden;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(225, 225, 225);
 }
 
-.featuredSection h1 {
+.header {
   text-align: center;
   font-family: "Roboto";
-  font-size: 42px;
+  font-size: 48px;
+  color: rgb(17, 17, 17);
 }
 
 .imgSection {
@@ -17,7 +18,7 @@
   margin-bottom: 50px;
 }
 
-.sectionContainers {
+.imgSectionContainers {
   display: flex;
   justify-content: center;
 }
@@ -43,6 +44,7 @@
 }
 
 .img label {
+  color: rgb(17, 17, 17);
   font-size: 20px;
   font-weight: bold;
   font-family: "Roboto";
@@ -54,4 +56,10 @@
   filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.65));
   transform: scale(1.05);
   transition: 1s;
+}
+
+.infoContainer {
+  width: 75%;
+  height: 300px;
+  background-color: rgb(17, 17, 17);
 }

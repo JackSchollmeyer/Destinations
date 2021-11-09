@@ -16,7 +16,7 @@ export default function Footer() {
       <footer className={s.footer}>
         <div className={s.footerContent}>
           <div className={s.mediaSection}>
-            <h2>You can find me at</h2>
+            <h2>- You can find me at -</h2>
             <div className={s.mediaIconsContainer}>
               <div>
                 <Link href="https://github.com/">
