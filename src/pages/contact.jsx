@@ -1,44 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import Background from "../public/calmWoods.jpg";
+import Input from "../components/Input";
+import Background from "../public/jungleBridge.jpg";
 import s from "../../styles/Contact.module.css";
-import { Fisend } from "react-icons/fi";
 
 export default function contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <div>
-      <div className={s.pageContent}>
-        <div className={s.headerContainer}>
-          <h1 className={s.header}>Have a request?</h1>
+      <div className={s.contactContianer}>
+        <h1>Let's Talk</h1>
+        <h2>
+          Drop your thoughts below about any concerns or interests you have.
+        </h2>
+        <div className={s.nameInputContainer}>
+          <Input
+            label="First Name"
+            value={firstName}
+            handleChange={(e) => setFirstName(e.target.value)}
+          />
+          <Input
+            label="Last Name"
+            value={lastName}
+            handleChange={(e) => setLastName(e.target.value)}
+          />
         </div>
-        <div className={s.requestSection}>
-          <div className={s.paragraphContainer}>
-            <div className={s.paragraph}>
-              <p>
-                What landscapes do you think should be added to the library?
-              </p>
-            </div>
-          </div>
-          <div className={s.textareaContainer}>
-            <textarea placeholder="Type request here..."></textarea>
-          </div>
-        </div>
-        <div className={s.inputSection}>
-          <div className={s.inputsContainer}>
-            <input
-              type="text"
-              placeholder="Name here..."
-              className={s.inputs}
-            ></input>
-            <input
-              type="text"
-              placeholder="Email here..."
-              className={s.inputs}
-            ></input>
-          </div>
-          <div className={s.sendButtonContainer}>
-            <button className={s.sendButton}>Send</button>
-          </div>
+        <div className={s.bottomHalfInputContianer}>
+          <Input
+            label="Email"
+            value={email}
+            handleChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            label="Message"
+            value={message}
+            handleChange={(e) => setMessage(e.target.value)}
+          />
+          <button className={s.submitButton}>Submit</button>
         </div>
       </div>
       <div className={s.img}>

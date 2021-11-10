@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script");
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
 .navbar {
   display: flex;
@@ -8,9 +7,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgb(17, 17, 17);
-  color: #d0cfcf;
-  padding-left: 26px;
-  padding-right: 26px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
   height: 74px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
 }
@@ -28,8 +27,8 @@
   width: 400px;
   justify-content: space-between;
   font-size: 24px;
-  font-family: "Roboto";
   text-transform: uppercase;
+  font-family: Helvetica;
 }
 
 .sidebarContainer {
@@ -44,8 +43,8 @@
   position: fixed;
   width: 250px;
   height: 100%;
-  background-color: rgba(49, 47, 47, 0.8);
-  color: #d0cfcf;
+  background-color: rgba(17, 17, 17, 0.7);
+  color: white;
   z-index: 2;
 }
 
@@ -54,6 +53,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 500px;
+  font-family: Helvetica;
 }
 
 .navText {
@@ -83,4 +83,13 @@
 
 .navText span {
   margin-left: 10px;
+}
+
+@media (min-width: 1600px) {
+  .sidebar ul {
+    height: 600px;
+  }
+  .navbarLinks {
+    width: 500px;
+  }
 }

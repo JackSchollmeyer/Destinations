@@ -1,0 +1,10 @@
+.inputs {
+  width: 500px;
+  height: 75px;
+  background: transparent;
+  color: white;
+  border-bottom: solid 1px white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}

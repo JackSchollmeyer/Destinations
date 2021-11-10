@@ -1,13 +1,25 @@
 import React from "react";
+import s from "../../styles/Inputs.module.css";
 
-export default function Input({ placeholder, value, handleChange }) {
+export default function Input({
+  label,
+  placeholder,
+  type,
+  value,
+  handleChange,
+}) {
   return (
     <div>
-      <input
-        placeholder={placeholder}
-        value={value}
-        onChange={handleChange}
-      ></input>
+      <div>
+        {label}
+        <input
+          placeholder={placeholder}
+          type={type}
+          value={value}
+          onChange={handleChange}
+          className={s.inputs}
+        ></input>
+      </div>
     </div>
   );
 }

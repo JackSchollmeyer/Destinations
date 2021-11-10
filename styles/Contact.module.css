@@ -1,134 +1,37 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+.contactContianer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  background-color: rgb(17, 17, 17);
+  font-family: Helvetica;
+  color: white;
+}
+
+.contactContianer h1 {
+  margin-top: 100px;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.contactContianer h2 {
+  font-weight: normal;
+}
+
+.nameInputContainer {
+  display: flex;
+}
+
+.bottomHalfInputContianer {
+}
 
 .img {
   display: flex;
-  background-color: rgb(36, 36, 36);
-  z-index: -1;
+  justify-content: flex-end;
 }
 
 .img img {
-  width: 100vw;
-  opacity: 15%;
-}
-
-.pageContent {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  margin-top: 65px;
-  z-index: 1;
-  font-family: "Roboto";
-}
-
-.headerContainer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.header {
-  justify-content: start;
-  width: 990px;
-  color: rgb(255, 255, 255);
-  font-size: 64px;
-  text-transform: uppercase;
-  font-weight: normal;
-  border-bottom: solid 3px rgb(255, 255, 255);
-}
-
-.requestSection {
-  display: flex;
-}
-
-.paragraphContainer {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  border: solid;
-}
-
-.paragraph {
-  display: flex;
-  justify-content: flex-end;
-  width: 450px;
-  height: 168px;
-  border-bottom: solid 2px rgb(255, 255, 255);
-  margin: auto 95px auto auto;
-}
-
-.paragraph p {
-  color: rgb(255, 255, 255);
-  font-size: 36px;
-  width: 350px;
-  text-align: center;
-}
-
-.textareaContainer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.pageContent textarea {
-  width: 750px;
-  height: 275px;
-  background-color: rgba(36, 36, 36, 0.95);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 50px 145px auto auto;
-  border: none;
-  resize: none;
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  font-family: "Roboto";
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
-  justify-content: flex-end;
-}
-
-.inputSection {
-  display: flex;
-  height: 225px;
-  margin-top: 130px;
-}
-
-.inputsContainer {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100%;
-  margin-left: 175px;
-  margin-bottom: 55px;
-}
-
-.inputs {
-  width: 600px;
-  height: 75px;
-  background-color: rgba(36, 36, 36, 0.95);
-  border-radius: 5px;
-  padding-left: 10px;
-  border: none;
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  font-family: "Roboto";
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
-}
-
-.sendButtonContainer {
-  display: flex;
-  align-items: center;
-  margin-left: 120px;
-}
-
-.sendButton {
-  width: 400px;
-  height: 75px;
-  font-family: "Roboto";
-  font-size: 36px;
-  text-transform: uppercase;
-  background-color: #57ce78;
-  color: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
+  z-index: -1;
+  height: 100vh;
 }
