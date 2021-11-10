@@ -38,8 +38,8 @@ export default function GoalSection() {
           <div>
             <h3>To inspire</h3>
             <p>
-              Search for your own destinations that influence you and learn
-              about what makes them extraordinary.
+              Search for destinations that influence you and learn about what
+              makes them extraordinary.
             </p>
           </div>
           <div className={s.illustrations}>

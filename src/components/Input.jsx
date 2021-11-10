@@ -1,5 +1,5 @@
 import React from "react";
-import s from "../../styles/Inputs.module.css";
+import s from "../../styles/Input.module.css";
 
 export default function Input({
   label,
@@ -17,7 +17,7 @@ export default function Input({
           type={type}
           value={value}
           onChange={handleChange}
-          className={s.inputs}
+          className={s.input}
         ></input>
       </div>
     </div>
