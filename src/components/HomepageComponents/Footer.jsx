@@ -94,6 +94,7 @@ export default function Footer() {
               <ul>
                 <li>Terms & Services</li>
                 <li>Privacy Policy</li>
+                <li>Sources</li>
               </ul>
             </div>
           </div>
