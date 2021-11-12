@@ -75,37 +75,3 @@
   width: 100%;
   font-weight: bold;
 }
-
-.learnMore:after {
-  content: "";
-  display: flex;
-  border-bottom: solid 5px;
-  width: 30px;
-  color: #a2e086;
-  transition: 0.5s;
-}
-
-.learnMore:hover:after {
-  content: "";
-  border-bottom: solid 2px;
-  width: 100%;
-  color: #a2e086;
-  transition: 0.5s;
-}
-
-.location:after {
-  content: "";
-  display: flex;
-  border-bottom: solid 5px;
-  width: 30px;
-  color: #a2e086;
-  transition: 0.5s;
-}
-
-.location:hover:after {
-  content: "";
-  border-bottom: solid 2px;
-  width: 100%;
-  color: #a2e086;
-  transition: 0.5s;
-}
