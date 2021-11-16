@@ -13,33 +13,38 @@ export default function Contact() {
   return (
     <div className={s.background}>
       <div className={s.contactContianer}>
-        <h1>Let's Talk</h1>
-        <h2>
-          Drop your thoughts below about any concerns or interests you have.
-        </h2>
-        <div className={s.nameInputContainer}>
+        <div className={s.headers}>
+          <h1>Let's Talk</h1>
+          <h2>Have any questions, ideas, or concerns?</h2>
+        </div>
+        <div className={s.inputs}>
           <Input
-            label="First Name"
+            label="First name"
             value={firstName}
             handleChange={(e) => setFirstName(e.target.value)}
+            placeholder="type here..."
           />
           <Input
-            label="Last Name"
+            label="Last name"
             value={lastName}
             handleChange={(e) => setLastName(e.target.value)}
+            placeholder="type here..."
           />
-        </div>
-        <div className={s.bottomHalfInputContianer}>
           <Input
             label="Email"
             value={email}
             handleChange={(e) => setEmail(e.target.value)}
+            placeholder="type here..."
           />
-          <Input
-            label="Message"
-            value={message}
-            handleChange={(e) => setMessage(e.target.value)}
-          />
+        </div>
+        <div className={s.messageAndSubmit}>
+          <div>
+            <label className={s.messageLabel}>Message</label>
+            <textarea
+              className={s.messageArea}
+              placeholder="type here..."
+            ></textarea>
+          </div>
           <button className={s.submitButton}>Submit</button>
         </div>
       </div>

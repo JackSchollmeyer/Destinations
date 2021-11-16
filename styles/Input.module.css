@@ -1,11 +1,13 @@
 .input {
   display: block;
-  width: 400px;
+  width: 500px;
   height: 75px;
   background: transparent;
   color: white;
-  border-bottom: solid 1px white;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
 }

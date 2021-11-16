@@ -7,11 +7,10 @@ import SeychellesIslands from "../../public/tropical/SeychellesIslands.jpg";
 import AmazonRainforest from "../../public/tropical/amazonRainforest.jpg";
 import WhitsundayIsland from "../../public/tropical/whitsundayIsland.jpg";
 import PhiPhiIslands from "../../public/tropical/phiphiIslands.jpg";
-import NiagaraFalls from "../../public/tropical/niagaraFalls.jpg";
+import Tegallalang from "../../public/tropical/tegallalang.jpg";
 import TheAzores from "../../public/tropical/theAzores.jpg";
 import CookIslands from "../../public/tropical/cookIslands.jpg";
 import KhaoPhingKan from "../../public/tropical/khaoPhingKan.jpg";
-import Background from "../../public/tropical/tropicalLeaves.jpg";
 
 export default function TropicalSection() {
   return (
@@ -95,18 +94,18 @@ export default function TropicalSection() {
           }
         />
         <LocationCard
-          image={<Image src={NiagaraFalls} alt="Niagara Falls" />}
-          name="Niagara Falls"
-          desciption="Niagara Falls, a spectacular waterfall in the NIAGARA RIVER, is the world's greatest waterfall by volume at 2832 m3. It is split in two by Goat Island. The American Falls are 59 m high and 260 m wide and carry about 10% of the flow."
+          image={<Image src={Tegallalang} alt="Tegallalang" />}
+          name="Tegallalang"
+          desciption="The beautiful Tegalalang Rice Terrace, located north of Ubud, is actually an ancient irrigation system, dating back to the eighth century. Its series of sloping rice paddies just begs to be photographed, and indeed, the terrace is one of the most popular attractions among camera-toting tourists in this region of Bali."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Niagara_Falls">
+            <Link href="https://en.wikipedia.org/wiki/Tegallalang">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Niagara+Falls,+NY/@43.0994841,-79.0787814,12z/data=!3m1!4b1!4m5!3m4!1s0x89d363ea29e633b7:0x61975ae4b9c5aab3!8m2!3d43.0962143!4d-79.0377388">
+            <Link href="https://www.google.com/maps/place/Tegallalang,+Gianyar,+Bali,+Indonesia/data=!4m2!3m1!1s0x2dd218a46438f143:0x4030bfbca7d2d40?sa=X&ved=2ahUKEwjuxpKO9pz0AhVGaM0KHQYtCX4Q8gF6BAg-EAE">
               <a className={s.location} target="_blank">
                 Locate
               </a>
