@@ -27,8 +27,6 @@
   width: 400px;
   justify-content: space-between;
   font-size: 24px;
-  text-transform: uppercase;
-  font-family: Helvetica;
 }
 
 .sidebarContainer {
@@ -51,9 +49,9 @@
 .sidebar ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
-  font-family: Helvetica;
+  justify-content: space-around;
+  height: 80%;
+  margin-top: 74px;
 }
 
 .navText {
@@ -83,13 +81,4 @@
 
 .navText span {
   margin-left: 10px;
-}
-
-@media (min-width: 1600px) {
-  .sidebar ul {
-    height: 600px;
-  }
-  .navbarLinks {
-    width: 500px;
-  }
 }

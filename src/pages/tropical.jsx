@@ -1,7 +1,5 @@
 import React from "react";
-import TropicalSection from "../components/TropicalSection";
-// import ImageSlider from "../components/ImageSlider";
-// import { SliderData } from "../components/SliderData";
+import TropicalSection from "../components/ExploreSections/TropicalSection";
 
 export default function tropical() {
   return (

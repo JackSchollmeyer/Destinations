@@ -2,15 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LocationCard from "./LocationCard";
-import s from "../../styles/TropicalSection.module.css";
-import SeychellesIslands from "../public/tropical/SeychellesIslands.jpg";
-import AmazonRainforest from "../public/tropical/amazonRainforest.jpg";
-import WhitsundayIsland from "../public/tropical/whitsundayIsland.jpg";
-import PhiPhiIslands from "../public/tropical/phiphiIslands.jpg";
-import NiagaraFalls from "../public/tropical/niagaraFalls.jpg";
-import TheAzores from "../public/tropical/theAzores.jpg";
-import CookIslands from "../public/tropical/cookIslands.jpg";
-import KhaoPhingKan from "../public/tropical/khaoPhingKan.jpg";
+import s from "../../../styles/TropicalSection.module.css";
+import SeychellesIslands from "../../public/tropical/SeychellesIslands.jpg";
+import AmazonRainforest from "../../public/tropical/amazonRainforest.jpg";
+import WhitsundayIsland from "../../public/tropical/whitsundayIsland.jpg";
+import PhiPhiIslands from "../../public/tropical/phiphiIslands.jpg";
+import NiagaraFalls from "../../public/tropical/niagaraFalls.jpg";
+import TheAzores from "../../public/tropical/theAzores.jpg";
+import CookIslands from "../../public/tropical/cookIslands.jpg";
+import KhaoPhingKan from "../../public/tropical/khaoPhingKan.jpg";
+import Background from "../../public/tropical/tropicalLeaves.jpg";
 
 export default function TropicalSection() {
   return (
@@ -58,20 +59,16 @@ export default function TropicalSection() {
         <LocationCard
           image={<Image src={TheAzores} alt="The Azores" />}
           name="The Azores"
-          desciption="Lorem ipsung about the elder worlds of the world when the giants heard
-          the speaking of the opld men in the city wandering around in the foggy
-          homees of ireland. lorem ipsung about the elder worlds of the world
-          when the giants heard the speaking of the opld men in the city
-          wandering around in the foggy homees of ireland."
+          desciption="The Azores, officially the Autonomous Region of the Azores, is one of the two autonomous regions of Portugal (along with Madeira). It is an archipelago composed of nine volcanic islands in the Macaronesia region of the North Atlantic Ocean, about 1,400 km west of Lisbon, about 1,500 km northwest of Morocco, and about 1,930 km southeast of Newfoundland, Canada."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Seychelles">
+            <Link href="https://en.wikipedia.org/wiki/Azores">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Seychelles/@-4.5833118,55.6579119,15z/data=!3m1!4b1!4m5!3m4!1s0x231fdab48c500c57:0x536f1be1f469e0cb!8m2!3d-4.5833333!4d55.6666667">
+            <Link href="https://www.google.com/maps/place/Azores,+Portugal/@38.2412369,-32.6316109,6z/data=!3m1!4b1!4m5!3m4!1s0xb467f1e11e43b05:0xe2911b674bce0c1d!8m2!3d37.7412488!4d-25.6755944">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -81,20 +78,16 @@ export default function TropicalSection() {
         <LocationCard
           image={<Image src={PhiPhiIslands} alt="Phi Phi Islands" />}
           name="Phi Phi Islands"
-          desciption="Lorem ipsung about the elder worlds of the world when the giants heard
-          the speaking of the opld men in the city wandering around in the foggy
-          homees of ireland. lorem ipsung about the elder worlds of the world
-          when the giants heard the speaking of the opld men in the city
-          wandering around in the foggy homees of ireland."
+          desciption="Phi Phi consists of six small islands 46km south of Phuket. Fine sandy beaches give way to soaring limestone cliffs to form spectacular scenery. Add crystal clear water, a refreshing lack of roads, plus a laid-back lifestyle, and it's easy to see why Phi Phi is one of southern Thailand's most popular destinations."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Seychelles">
+            <Link href="https://en.wikipedia.org/wiki/Phi_Phi_Islands">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Seychelles/@-4.5833118,55.6579119,15z/data=!3m1!4b1!4m5!3m4!1s0x231fdab48c500c57:0x536f1be1f469e0cb!8m2!3d-4.5833333!4d55.6666667">
+            <Link href="https://www.google.com/maps/place/Phi+Phi+Islands,+Krabi,+Thailand/data=!4m2!3m1!1s0x304e20be764e3d0d:0xbf9db8781a549f71?sa=X&ved=2ahUKEwiUnIneuJr0AhW7lmoFHYW7DOoQ8gF6BAhsEAE">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -104,20 +97,16 @@ export default function TropicalSection() {
         <LocationCard
           image={<Image src={NiagaraFalls} alt="Niagara Falls" />}
           name="Niagara Falls"
-          desciption="Lorem ipsung about the elder worlds of the world when the giants heard
-          the speaking of the opld men in the city wandering around in the foggy
-          homees of ireland. lorem ipsung about the elder worlds of the world
-          when the giants heard the speaking of the opld men in the city
-          wandering around in the foggy homees of ireland."
+          desciption="Niagara Falls, a spectacular waterfall in the NIAGARA RIVER, is the world's greatest waterfall by volume at 2832 m3. It is split in two by Goat Island. The American Falls are 59 m high and 260 m wide and carry about 10% of the flow."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Seychelles">
+            <Link href="https://en.wikipedia.org/wiki/Niagara_Falls">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Seychelles/@-4.5833118,55.6579119,15z/data=!3m1!4b1!4m5!3m4!1s0x231fdab48c500c57:0x536f1be1f469e0cb!8m2!3d-4.5833333!4d55.6666667">
+            <Link href="https://www.google.com/maps/place/Niagara+Falls,+NY/@43.0994841,-79.0787814,12z/data=!3m1!4b1!4m5!3m4!1s0x89d363ea29e633b7:0x61975ae4b9c5aab3!8m2!3d43.0962143!4d-79.0377388">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -127,20 +116,16 @@ export default function TropicalSection() {
         <LocationCard
           image={<Image src={WhitsundayIsland} alt="Whitsunday Island" />}
           name="Whitsunday Island"
-          desciption="Lorem ipsung about the elder worlds of the world when the giants heard
-          the speaking of the opld men in the city wandering around in the foggy
-          homees of ireland. lorem ipsung about the elder worlds of the world
-          when the giants heard the speaking of the opld men in the city
-          wandering around in the foggy homees of ireland."
+          desciption="The Whitsundays are part of the Great Barrier Reef Marine Park, which means they are part of the world's largest living ecosystem. The islands have what are called 'fringing reefs' that circle around the islands and provide amazing snorkelling locations, as well as ideal habitats for the many fish that live here."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Seychelles">
+            <Link href="https://en.wikipedia.org/wiki/Whitsunday_Islands">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Seychelles/@-4.5833118,55.6579119,15z/data=!3m1!4b1!4m5!3m4!1s0x231fdab48c500c57:0x536f1be1f469e0cb!8m2!3d-4.5833333!4d55.6666667">
+            <Link href="https://www.google.com/maps/place/Whitsunday+Islands/@-20.1853546,148.1663806,9z/data=!3m1!4b1!4m5!3m4!1s0x6bd908192617babf:0x345293e5fe0645b1!8m2!3d-20.1862425!4d148.7268546">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -150,20 +135,16 @@ export default function TropicalSection() {
         <LocationCard
           image={<Image src={CookIslands} alt="Cook Islands" />}
           name="Cook Islands"
-          desciption="Lorem ipsung about the elder worlds of the world when the giants heard
-          the speaking of the opld men in the city wandering around in the foggy
-          homees of ireland. lorem ipsung about the elder worlds of the world
-          when the giants heard the speaking of the opld men in the city
-          wandering around in the foggy homees of ireland."
+          desciption="Accessible by air from Rarotonga and known for deserted beaches, limestone caves and a population of 400 warrior people, it's one of the few untouched places left on Earth. The Cook Islands are refreshingly devoid of towering mega-resorts – the rule of thumb is that no building can be taller than the palm trees."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Seychelles">
+            <Link href="https://en.wikipedia.org/wiki/Cook_Islands">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Seychelles/@-4.5833118,55.6579119,15z/data=!3m1!4b1!4m5!3m4!1s0x231fdab48c500c57:0x536f1be1f469e0cb!8m2!3d-4.5833333!4d55.6666667">
+            <Link href="https://www.google.com/maps/place/Cook+Islands/@-15.5831431,-165.43569,6z/data=!3m1!4b1!4m5!3m4!1s0x71548aefb97bdedd:0x24ca50e8808b4d8!8m2!3d-21.236736!4d-159.777671">
               <a className={s.location} target="_blank">
                 Locate
               </a>

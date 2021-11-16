@@ -4,7 +4,6 @@
   align-items: center;
   overflow: hidden;
   background-color: rgb(17, 17, 17);
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
 
 .header {
@@ -15,14 +14,14 @@
 .goalContainer {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 1400px;
   margin: 50px 0;
 }
 
 .goalContainer p {
   color: white;
   width: 500px;
-  font-size: 22px;
+  font-size: 28px;
   padding: 0 20px;
 }
 
@@ -37,31 +36,11 @@
 
 .goalContainer h3 {
   color: #a2e086;
-  font-size: 36px;
+  font-size: 42px;
   padding: 0 20px;
 }
 
 .illustrations {
   width: 400px;
   height: 400px;
-}
-
-@media (min-width: 1600px) {
-  .header {
-    font-size: 60px;
-  }
-
-  .goalContainer h3 {
-    font-size: 48px;
-  }
-
-  .goalContainer p {
-    font-size: 28px;
-    width: 625px;
-  }
-
-  .illustrations {
-    width: 500px;
-    height: 500px;
-  }
 }

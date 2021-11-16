@@ -11,7 +11,7 @@ export default function Contact() {
   const [message, setMessage] = useState("");
 
   return (
-    <div className={s.background}>
+    <div>
       <div className={s.contactContianer}>
         <h1>Let's Talk</h1>
         <h2>
@@ -42,6 +42,9 @@ export default function Contact() {
           />
           <button className={s.submitButton}>Submit</button>
         </div>
+      </div>
+      <div className={s.img}>
+        <Image src={Background} alt="Calm Woods" />
       </div>
     </div>
   );

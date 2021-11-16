@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import s from "../../styles/Mountainous.module.css";
+import s from "../../../styles/Mountainous.module.css";
 
 export default function MountainousArea() {
   const [color1, setColor1] = useState(false);
