@@ -1,6 +1,6 @@
 import React from "react";
-import MountainousArea from "../components/ExploreSections/MountainousArea";
+import MountainousSection from "../components/ExploreSections/MountainousSection";
 
 export default function mountainous() {
-  return <MountainousArea />;
+  return <MountainousSection />;
 }
