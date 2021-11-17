@@ -6,11 +6,11 @@ import s from "../../../styles/ExploreSectionsFormat.module.css";
 import Sahara from "../../public/dryland/sahara.jpg";
 import TheWave from "../../public/dryland/theWave.jpg";
 import AntelopeCanyon from "../../public/dryland/antelopeCanyon.jpg";
-import Kirkjufell from "../../public/mountainous/kirkjufell.jpg";
-import MountFuji from "../../public/mountainous/mountFuji.jpg";
-import MachuPicchu from "../../public/mountainous/machuPicchu.jpeg";
-import TorresDelPaine from "../../public/mountainous/torresDelPaine.jpg";
-import TableMountain from "../../public/mountainous/tableMountain.jpg";
+import BlackRockDesert from "../../public/dryland/blackRockDesert.jpg";
+import Huacachina from "../../public/dryland/huacachina.jpg";
+import LençóisMaranhenses from "../../public/dryland/lençóisMaranhenses.jpg";
+import UyuniSaltFlat from "../../public/dryland/uyuniSaltFlat.jpg";
+import BlackDesert from "../../public/dryland/blackDesert.jpg";
 
 export default function DrylandSection() {
   return (
@@ -75,18 +75,18 @@ export default function DrylandSection() {
           }
         />
         <LocationCard
-          image={<Image src={Kirkjufell} alt="Kirkjufell" />}
-          name="Kirkjufell"
-          desciption="Grundarfjordur's beautiful landmark Kirkjufell (Church Mountain) is said to be the most photographed mountain in Iceland. Its isolated position, 463 meters above sea level and jutting out into the sea, makes it a focal point for travellers and locals alike."
+          image={<Image src={BlackRockDesert} alt="Black Rock Desert" />}
+          name="Black Rock Desert"
+          desciption="The desert is a regionally important centre of gypsum mining. The playa (ancient lake bed) at the desert's southern end has served in recent years as the site of turbojet car races in which world land-speed records are frequently set and broken."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Kirkjufell">
+            <Link href="https://en.wikipedia.org/wiki/Black_Rock_Desert">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Kirkjufell/@64.9416652,-23.3244539,14z/data=!3m1!4b1!4m5!3m4!1s0x48d57bab8dd70f87:0x9b45ba57731db7b!8m2!3d64.9416667!4d-23.3069444!5m1!1e4?hl=en">
+            <Link href="https://www.google.com/maps/place/Black+Rock+Desert,+Nevada/data=!4m2!3m1!1s0x809fc1db18d4f4a7:0xf2f995dbd40787a0!5m1!1e4?sa=X&hl=en&ved=2ahUKEwjlwNOSwqD0AhWMGs0KHfgbDjgQ8gF6BAhsEAE">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -94,18 +94,18 @@ export default function DrylandSection() {
           }
         />
         <LocationCard
-          image={<Image src={MountFuji} alt="Mount Fuji" />}
-          name="Mount Fuji"
-          desciption="Rising to 12,388 feet (3,776 metres), Mount Fuji is the tallest mountain in Japan and is known for its graceful conical form. It is the country's sacred symbol, and temples and shrines are located around and on the volcano."
+          image={<Image src={Huacachina} alt="Huacachina" />}
+          name="Huacachina"
+          desciption="Huacachina is a village built around a small oasis and surrounded by sand dunes in southwestern Peru. ... The oasis was introduced as a feature on the back of the 50 nuevo sol note in 1991. Huacachina has a permanent population of around 100 people, although it hosts many tens of thousands of tourists each year."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Mount_Fuji">
+            <Link href="https://en.wikipedia.org/wiki/Huacachina">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Mount+Fuji,+Kitayama,+Fujinomiya,+Shizuoka+418-0112,+Japan/data=!4m2!3m1!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!5m1!1e4?sa=X&hl=en&ved=2ahUKEwiP87W94Z30AhWDB80KHfc5DQAQ8gF6BAh4EAE">
+            <Link href="https://www.google.com/maps/place/Huacachina+11000,+Peru/@-14.0874996,-75.7652973,17z/data=!3m1!4b1!4m5!3m4!1s0x9110e3010800b101:0x136be001d08a4223!8m2!3d-14.0874587!4d-75.762586?hl=en">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -113,18 +113,18 @@ export default function DrylandSection() {
           }
         />
         <LocationCard
-          image={<Image src={MachuPicchu} alt="Machu Picchu" />}
-          name="Machu Picchu"
-          desciption="More than 7,000 feet above sea level in the Andes Mountains, Machu Picchu is the most visited tourist destination in Peru. A symbol of the Incan Empire and built around 1450AD, Machu Picchu was designated a UNESCO World Heritage Site in 1983 and was named one of the New Seven Wonders of the World in 2007."
+          image={<Image src={LençóisMaranhenses} alt="Lençóis Maranhenses" />}
+          name="Lençóis Maranhenses"
+          desciption="The National Park of Lençóis Maranhenses (LMNP), created by Decree 86,060, in June 2nd, 1981, is characterized as the largest field of sand dunes in South America. It comprises an area of 155 thousand hectares, of which 90 thousand consist of mobile dunes and lagoons formed by these dunes."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Machu_Picchu">
+            <Link href="https://en.wikipedia.org/wiki/Len%C3%A7%C3%B3is_Maranhenses_National_Park">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/search/machu+picchu/@-13.1562084,-72.558996,14z/data=!3m1!4b1?hl=en">
+            <Link href="https://www.google.com/maps/place/Parque+Nacional+dos+Len%C3%A7%C3%B3is+Maranhenses/@-2.4859385,-43.128407,15z/data=!4m5!3m4!1s0x0:0x2d2895d0d57e9beb!8m2!3d-2.4859385!4d-43.128407?hl=en">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -132,18 +132,18 @@ export default function DrylandSection() {
           }
         />
         <LocationCard
-          image={<Image src={TorresDelPaine} alt="Torres del Paine" />}
-          name="Torres del Paine"
-          desciption="Torres del Paine National Park is best known as a hiker's paradise. Its most famous hike involves a demanding 31-mile walk up and down the park's valleys to see its most famous sights. The route takes the shape of a “W”, hence the name W Trek."
+          image={<Image src={UyuniSaltFlat} alt="Uyuni Salt Flat" />}
+          name="Uyuni Salt Flat"
+          desciption="Salar de Uyuni is the worlds largest salt flat, spanning 4086 square miles (10,582 sq. km) in south-western Bolivia. Unlike traditional deserts, which have sand in abundance, the Salar de Uyuni features vast expanses of glistening white salt."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Torres_del_Paine_National_Park">
+            <Link href="https://en.wikipedia.org/wiki/Salar_de_Uyuni">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Torres+del+Paine+National+Park/@-50.9423262,-73.4067879,15z/data=!4m2!3m1!1s0x0:0xbd9f2657451ace58?sa=X&hl=en&ved=2ahUKEwij-u6exZ_0AhVaXM0KHay3A5sQ_BJ6BAhyEAU">
+            <Link href="https://www.google.com/maps/place/Uyuni+Salt+Flat/@-20.2086421,-68.1524845,9z/data=!3m1!4b1!4m5!3m4!1s0x915584b325e18bd7:0xce4183a158278b6!8m2!3d-20.1337772!4d-67.4891345?hl=en">
               <a className={s.location} target="_blank">
                 Locate
               </a>
@@ -151,18 +151,18 @@ export default function DrylandSection() {
           }
         />
         <LocationCard
-          image={<Image src={TableMountain} alt="Table Mountain" />}
-          name="Table Mountain"
-          desciption="Table Mountain is the most iconic landmark of South Africa. It is also the country's most photographed attraction and its famous cable car took millions of people to its top. It's thought to be one of the oldest mountains in the world."
+          image={<Image src={BlackDesert} alt="Black Desert" />}
+          name="Black Desert"
+          desciption="The Black Desert is a region of volcano-shaped and widely spaced mounds, distributed along about 30 km in western Egypt between the White Desert in the south and the Bahariya Oasis in the north."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Table_Mountain">
+            <Link href="https://en.wikipedia.org/wiki/Black_Desert_(Egypt)">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Maclear's+Beacon/@-33.9668233,18.4080533,14z/data=!3m1!4b1!4m5!3m4!1s0x1dcc67f7b1b2b61f:0x5fdb77f98d0dfeb4!8m2!3d-33.966825!4d18.4255629!5m1!1e4?hl=en">
+            <Link href="https://www.google.com/maps/place/Black+Desert/@28.20186,28.7308788,15z/data=!4m2!3m1!1s0x0:0xc1daf109010ad569?sa=X&ved=2ahUKEwj62OCVyqD0AhVVVs0KHY6gDHgQ_BJ6BAhZEAU">
               <a className={s.location} target="_blank">
                 Locate
               </a>
