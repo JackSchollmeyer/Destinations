@@ -36,7 +36,7 @@ export default function Navbar({ children }) {
 
   const router = useRouter();
   const setNavbarStyle = () => {
-    if (router.pathname !== "/dryland") {
+    if (router.pathname !== "/foresty") {
       return { position: "fixed" };
     }
   };
