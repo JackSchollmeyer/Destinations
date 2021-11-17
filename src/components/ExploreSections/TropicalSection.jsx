@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LocationCard from "./LocationCard";
-import s from "../../../styles/TropicalSection.module.css";
+import s from "../../../styles/ExploreSectionsFormat.module.css";
 import SeychellesIslands from "../../public/tropical/SeychellesIslands.jpg";
 import AmazonRainforest from "../../public/tropical/amazonRainforest.jpg";
 import WhitsundayIsland from "../../public/tropical/whitsundayIsland.jpg";
@@ -14,7 +14,13 @@ import KhaoPhingKan from "../../public/tropical/khaoPhingKan.jpg";
 
 export default function TropicalSection() {
   return (
-    <div className={s.container}>
+    <div
+      className={s.container}
+      // style={{
+      //   backgroundImage:
+      //     "url(https://images.pexels.com/photos/4119179/pexels-photo-4119179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+      // }}
+    >
       <div className={s.grid}>
         <h1 className={s.header}>Tropical</h1>
         <LocationCard

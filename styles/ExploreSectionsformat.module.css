@@ -1,8 +1,8 @@
 .container {
   display: flex;
   justify-content: center;
-  background-image: url(https://images.pexels.com/photos/4119179/pexels-photo-4119179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
+  background: linear-gradient(#444444, #b9ccba);
 }
 
 .grid {

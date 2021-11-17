@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LocationCard from "./LocationCard";
-import s from "../../../styles/TropicalSection.module.css";
+import s from "../../../styles/ExploreSectionsFormat.module.css";
 import Matterhorn from "../../public/mountainous/matterhorn.jpg";
 import Vinicunca from "../../public/mountainous/vinicunca.jpg";
 import HuangshanMountain from "../../public/mountainous/huangshanMountain.jpg";
 import Kirkjufell from "../../public/mountainous/kirkjufell.jpg";
 import MountFuji from "../../public/mountainous/mountFuji.jpg";
 import MachuPicchu from "../../public/mountainous/machuPicchu.jpeg";
-// import Matterhorn from "../../public/mountainous/matterhorn.jpg";
+import TorresDelPaine from "../../public/mountainous/torresDelPaine.jpg";
 import TableMountain from "../../public/mountainous/tableMountain.jpg";
 
 export default function MountainousSection() {
   return (
-    <div className={s.container}>
+    <div
+      className={s.container}
+      // style={{
+      //   backgroundImage:
+      //     "url(https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80)",
+      // }}
+    >
       <div className={s.grid}>
         <h1 className={s.header}>Mountainous</h1>
         <LocationCard
@@ -132,18 +138,18 @@ export default function MountainousSection() {
           }
         />
         <LocationCard
-          image={<Image src={Vinicunca} alt="Cook Islands" />}
-          name="Cook Islands"
-          desciption="Accessible by air from Rarotonga and known for deserted beaches, limestone caves and a population of 400 warrior people, it's one of the few untouched places left on Earth. The Cook Islands are refreshingly devoid of towering mega-resorts – the rule of thumb is that no building can be taller than the palm trees."
+          image={<Image src={TorresDelPaine} alt="Torres del Paine" />}
+          name="Torres del Paine"
+          desciption="Torres del Paine National Park is best known as a hiker's paradise. Its most famous hike involves a demanding 31-mile walk up and down the park's valleys to see its most famous sights. The route takes the shape of a “W”, hence the name W Trek."
           learnMore={
-            <Link href="https://en.wikipedia.org/wiki/Cook_Islands">
+            <Link href="https://en.wikipedia.org/wiki/Torres_del_Paine_National_Park">
               <a className={s.learnMore} target="_blank">
                 Learn more
               </a>
             </Link>
           }
           locate={
-            <Link href="https://www.google.com/maps/place/Cook+Islands/@-15.5831431,-165.43569,6z/data=!3m1!4b1!4m5!3m4!1s0x71548aefb97bdedd:0x24ca50e8808b4d8!8m2!3d-21.236736!4d-159.777671">
+            <Link href="https://www.google.com/maps/place/Torres+del+Paine+National+Park/@-50.9423262,-73.4067879,15z/data=!4m2!3m1!1s0x0:0xbd9f2657451ace58?sa=X&hl=en&ved=2ahUKEwij-u6exZ_0AhVaXM0KHay3A5sQ_BJ6BAhyEAU">
               <a className={s.location} target="_blank">
                 Locate
               </a>
