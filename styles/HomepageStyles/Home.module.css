@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lora:ital,wght@1,700&family=Six+Caps&family=Source+Sans+Pro&display=swap");
 
 .homeContainer {
   display: flex;
@@ -18,13 +18,9 @@
   font-size: 124px;
   color: rgb(255, 255, 255);
   margin-bottom: 0;
-}
-
-.header span {
-  font-family: "Oleo Script";
+  letter-spacing: 10px;
   font-weight: normal;
-  letter-spacing: 2px;
-  color: #a2e086;
+  font-family: "Six Caps", sans-serif;
 }
 
 .headerContainer h2 {
