@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
 
+:root {
+  --green: #a9dc97;
+  --grey: rgb(17, 17, 17);
+  --raleway: "Raleway", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
 html,
 body {
   padding: 0;

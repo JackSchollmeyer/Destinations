@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import s from "../../styles/Navbar.module.css";
+import Logo from "../public/destinationsLogo.svg";
 import { useRouter } from "next/router";
 import { SidebarData } from "./SidebarData";
 
@@ -44,7 +46,12 @@ export default function Navbar({ children }) {
   return (
     <div>
       <nav className={s.navbar} style={setNavbarStyle()}>
-        <h1 className={s.navbarHeader}>Destinations</h1>
+        <div className={s.titleContainer}>
+          <div className={s.appLogo}>
+            <Image src={Logo} alt="" />
+          </div>
+          <h1 className={s.title}>Destinations</h1>
+        </div>
         <ul className={s.navbarLinks}>
           <li>
             <Link href="/">

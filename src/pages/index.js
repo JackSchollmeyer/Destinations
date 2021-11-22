@@ -1,9 +1,8 @@
-import Image from "next/image";
+import Link from "next/link";
 import s from "../../styles/HomepageStyles/Home.module.css";
 import FeaturedSection from "../components/HomepageComponents/FeaturedSection";
 import GoalSection from "../components/HomepageComponents/GoalSection";
 import Footer from "../components/HomepageComponents/Footer";
-import Background from "../public/manLookingAtMountain.jpeg";
 
 export default function Home() {
   return (
@@ -24,7 +23,14 @@ export default function Home() {
               maybe even feel inspired to do some of your own research to find
               places that you'd like to see added to the library.
             </p>
-            <button className={s.requestButton}>Make a request</button>
+            <div className={s.buttonContainer}>
+              <div className={s.callToActionButtons}>
+                <Link href="/tropical">See Gallery</Link>
+              </div>
+              <div className={s.callToActionButtons}>
+                <Link href="/contact">Make a Request</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

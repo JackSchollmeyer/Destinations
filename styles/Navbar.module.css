@@ -1,24 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap");
-
 .navbar {
   display: flex;
   z-index: 3;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(17, 17, 17);
+  background-color: var(--grey);
   color: white;
   padding-left: 30px;
   padding-right: 30px;
   height: 74px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.35));
-  font-family: "Raleway", sans-serif;
+  font-family: var(--raleway);
 }
 
-.navbarHeader {
+.titleContainer {
+  display: flex;
+}
+
+.appLogo {
+  width: 84px;
+  padding-top: 14px;
+}
+
+.title {
   font-size: 36px;
   letter-spacing: 2px;
   font-weight: normal;
+  border-left: solid 2px;
+  padding: 5px 10px;
 }
 
 .navbarLinks {
@@ -57,7 +66,7 @@
 .navText {
   list-style: none;
   font-size: 24px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--raleway);
   transition: 0.5s;
 }
 
