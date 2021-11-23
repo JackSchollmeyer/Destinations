@@ -2,9 +2,7 @@
   width: 600px;
   height: 600px;
   background-color: white;
-  color: rgb(17, 17, 17);
-  box-shadow: 2px 2px 6px rgb(70, 70, 70);
-  border-radius: 5px;
+  color: var(--grey);
 }
 
 .img {
@@ -16,7 +14,6 @@
   object-fit: cover;
   height: 350px;
   width: 600px;
-  border-radius: 5px 5px 0 0;
 }
 
 .infoContainer {
@@ -36,6 +33,7 @@
 .nameAndBtn h1 {
   margin: 0;
   font-size: 42px;
+  font-family: var(--raleway);
   font-weight: normal;
 }
 
@@ -45,8 +43,9 @@
   border: none;
   height: fit-content;
   cursor: pointer;
-  color: rgb(17, 17, 17);
+  color: var(--grey);
   font-size: 16px;
+  font-family: var(--raleway);
   font-weight: bold;
 }
 
@@ -55,7 +54,7 @@
   display: flex;
   border-bottom: solid 5px;
   width: 30px;
-  color: #a2e086;
+  color: var(--green);
   transition: 0.5s;
 }
 
@@ -63,7 +62,7 @@
   content: "";
   border-bottom: solid 2px;
   width: 100%;
-  color: #a2e086;
+  color: var(--green);
   transition: 0.5s;
 }
 
@@ -76,5 +75,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-family: var(--raleway);
   font-weight: bold;
 }

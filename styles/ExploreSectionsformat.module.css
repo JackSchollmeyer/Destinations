@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background-size: cover;
-  background: linear-gradient(#444444, #b9ccba);
+  background: linear-gradient(rgb(30, 30, 30), rgb(100, 100, 100));
 }
 
 .grid {
@@ -15,8 +15,11 @@
 .header {
   justify-self: center;
   grid-column: 1/3;
-  font-size: 96px;
+  font-size: 102px;
+  font-family: var(--raleway);
+  font-weight: normal;
   color: white;
+  letter-spacing: 4px;
 }
 
 .learnMore:after {
@@ -24,7 +27,7 @@
   display: flex;
   border-bottom: solid 5px;
   width: 30px;
-  color: #a2e086;
+  color: var(--green);
   transition: 0.5s;
 }
 
@@ -32,7 +35,7 @@
   content: "";
   border-bottom: solid 2px;
   width: 100%;
-  color: #a2e086;
+  color: var(--green);
   transition: 0.5s;
 }
 
@@ -41,7 +44,7 @@
   display: flex;
   border-bottom: solid 5px;
   width: 30px;
-  color: #a2e086;
+  color: var(--green);
   transition: 0.5s;
 }
 
@@ -49,6 +52,6 @@
   content: "";
   border-bottom: solid 2px;
   width: 100%;
-  color: #a2e086;
+  color: var(--green);
   transition: 0.5s;
 }

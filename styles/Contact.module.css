@@ -1,24 +1,32 @@
-.background {
+.backgroundImg {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../src/public/jungleBridge.jpg);
+}
+
+.backgroundOverlay {
   display: flex;
   justify-content: center;
-  background-image: url(https://images.unsplash.com/photo-1526754624448-267a526aea3f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80);
-  background-size: cover;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 17, 17, 0.95) 45%,
+    rgba(17, 17, 17, 0.35) 75%,
+    rgba(17, 17, 17, 0.95) 95%
+  );
 }
 
 .contactContianer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  width: 1350px;
+  width: 1200px;
   height: 100vh;
   padding-top: 50px;
-  background-color: rgba(17, 17, 17, 0.8);
   color: white;
+  font-family: var(--raleway);
 }
 
 .headers {
-  grid-column: 1/3;
-  text-align: center;
+  grid-column: 1;
   cursor: default;
 }
 
@@ -26,6 +34,15 @@
   font-size: 96px;
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: 4px;
+}
+
+.headers h1:before {
+  content: "";
+  display: flex;
+  border-top: solid 24px var(--green);
+  width: 150px;
+  margin-bottom: -10px;
 }
 
 .headers h2 {
@@ -34,13 +51,13 @@
 }
 
 .inputs {
+  grid-column: 1;
   font-size: 24px;
 }
 
 .messageAndSubmit {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .messageLabel {
@@ -50,16 +67,17 @@
 .messageArea {
   display: block;
   width: 500px;
-  height: 223px;
+  height: 228px;
   background: transparent;
   color: white;
   border: solid 1px white;
-  border-radius: 5px;
-  margin-bottom: 73px;
+  border-radius: 2px;
+  margin-bottom: 78px;
+  margin-top: 4px;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-family: var(--roboto);
   resize: none;
 }
 
@@ -67,10 +85,16 @@
   width: 300px;
   height: 75px;
   background: transparent;
-  border: solid 2px #a2e086;
-  border-radius: 5px;
-  color: #a2e086;
+  border: solid 2px var(--green);
+  border-radius: 2px;
+  color: var(--green);
+  font-family: var(--raleway);
   font-size: 36px;
-  text-transform: uppercase;
   cursor: pointer;
+  transition: 0.8s;
+}
+
+.submitButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.8s;
 }

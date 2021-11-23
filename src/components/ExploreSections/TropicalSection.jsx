@@ -14,13 +14,7 @@ import KhaoPhingKan from "../../public/tropical/khaoPhingKan.jpg";
 
 export default function TropicalSection() {
   return (
-    <div
-      className={s.container}
-      // style={{
-      //   backgroundImage:
-      //     "url(https://images.pexels.com/photos/4119179/pexels-photo-4119179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-      // }}
-    >
+    <div className={s.container}>
       <div className={s.grid}>
         <h1 className={s.header}>Tropical</h1>
         <LocationCard

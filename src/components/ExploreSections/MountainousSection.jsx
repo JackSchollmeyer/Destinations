@@ -14,13 +14,7 @@ import TableMountain from "../../public/mountainous/tableMountain.jpg";
 
 export default function MountainousSection() {
   return (
-    <div
-      className={s.container}
-      // style={{
-      //   backgroundImage:
-      //     "url(https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80)",
-      // }}
-    >
+    <div className={s.container}>
       <div className={s.grid}>
         <h1 className={s.header}>Mountainous</h1>
         <LocationCard

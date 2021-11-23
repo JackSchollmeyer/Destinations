@@ -5,10 +5,11 @@
   background: transparent;
   color: white;
   border: solid 1px white;
-  border-radius: 5px;
+  border-radius: 2px;
   margin-bottom: 45px;
+  margin-top: 4px;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 10px;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-family: var(--roboto);
 }
