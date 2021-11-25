@@ -1,7 +1,7 @@
 import Link from "next/link";
 import s from "../../styles/HomepageStyles/Home.module.css";
 import FeaturedSection from "../components/HomepageComponents/FeaturedSection";
-import GoalSection from "../components/HomepageComponents/GoalSection";
+import ProcessSection from "../components/HomepageComponents/ProcessSection";
 import Footer from "../components/HomepageComponents/Footer";
 
 export default function Home() {
@@ -34,8 +34,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <GoalSection />
       <FeaturedSection />
+      <ProcessSection />
       <Footer />
     </div>
   );
