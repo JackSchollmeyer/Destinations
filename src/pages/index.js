@@ -20,8 +20,8 @@ export default function Home() {
               Dive into the unknown to reimagine the world that we live in. Find
               new and exciting locations where you can admire their natural
               beauty, learn facts about them and where they’re located, and
-              maybe even feel inspired to do some of your own research to find
-              places that you'd like to see added to the library.
+              maybe even feel inspired to do some adventuring of your own to
+              find places that you'd like to see on the site.
             </p>
             <div className={s.buttonContainer}>
               <div className={s.callToActionButtons}>

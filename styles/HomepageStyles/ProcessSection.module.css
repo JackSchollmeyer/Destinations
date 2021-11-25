@@ -1,7 +1,20 @@
 .background {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(225, 225, 225);
+}
+
+.header {
+  width: 1100px;
+  margin: 80px auto;
+  font-family: var(--raleway);
+  font-size: 36px;
+}
+
+.header span {
+  font-size: 52px;
+  font-weight: bold;
 }
 
 .cardContainer {
@@ -21,38 +34,41 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.leftIllustration {
-  align-self: center;
-  width: 500px;
-  height: 300px;
-}
-
-.leftCardText {
-  align-self: center;
-  width: 300px;
-  margin-left: 20px;
-}
-
-.leftCardNumber {
-  margin: 20px 20px auto auto;
-  font-size: 64px;
-  font-weight: bold;
-  color: var(--green);
-}
-
 .rightCard {
   grid-column: 2/12;
   display: flex;
-  align-items: center;
   width: 1000px;
   height: 500px;
   margin-top: -10px;
-  padding: 40px;
+  padding-left: 40px;
   background-color: white;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
 }
 
-.rightIllustration {
+.illustration {
+  align-self: center;
   width: 500px;
   height: 300px;
+}
+
+.cardText {
+  align-self: center;
+  width: 300px;
+  margin-left: 40px;
+}
+
+.cardContainer h1 {
+  font-family: var(--raleway);
+  font-size: 36px;
+}
+
+.cardContainer h2 {
+  font-weight: 300;
+}
+
+.cardNumber {
+  margin: 20px 20px auto auto;
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--green);
 }
