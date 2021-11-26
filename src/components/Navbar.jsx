@@ -46,11 +46,15 @@ export default function Navbar({ children }) {
   return (
     <div>
       <nav className={s.navbar} style={setNavbarStyle()}>
-        <div className={s.titleContainer}>
-          <div className={s.appLogo}>
-            <Image src={Logo} alt="" />
-          </div>
-          <h1 className={s.title}>Destinations</h1>
+        <div>
+          <Link href="/">
+            <a className={s.titleContainer}>
+              <div className={s.appLogo}>
+                <Image src={Logo} alt="" />
+              </div>
+              <h1 className={s.title}>Destinations</h1>
+            </a>
+          </Link>
         </div>
         <ul className={s.navbarLinks}>
           <li>

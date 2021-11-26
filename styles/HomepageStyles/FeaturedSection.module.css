@@ -70,6 +70,11 @@
   background-color: white;
 }
 
+.grid img {
+  object-fit: cover;
+  height: 500px;
+}
+
 .grid p {
   grid-column: 1/3;
   grid-row: 5;

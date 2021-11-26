@@ -15,7 +15,7 @@ export default function FeaturedSection() {
       <div className={s.grid}>
         <h1 className={s.header}>Check out What's popular</h1>
         <div className={s.tallCard}>
-          <Image src={Sahara} alt="Sahara" />
+          {/* <Image src={Matterhorn} alt="Sahara" /> */}
         </div>
         <div className={s.card1}>
           <Image src={TheAzores} alt="The Azores" />
@@ -25,13 +25,13 @@ export default function FeaturedSection() {
         </div>
         <p>New locations added weekly!</p>
         <div className={s.wideCard}>
-          <Image src={TheArcticHenge} alt="The Arctic Henge" />
+          {/* <Image src={TheArcticHenge} alt="The Arctic Henge" /> */}
         </div>
         <div className={s.card3}>
-          <Image src={KhaoPhingKan} alt="Khao Phing Kan" />
+          <Image src={TheArcticHenge} alt="The Arctic Henge" />
         </div>
         <div className={s.card4}>
-          <Image src={MountFuji} alt="Mount Fuji" />
+          <Image src={Sahara} alt="Sahara" />
         </div>
       </div>
     </div>
