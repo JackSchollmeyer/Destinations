@@ -1,0 +1,30 @@
+.background {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(225, 225, 225);
+  overflow: hidden;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.bioContainer {
+  display: flex;
+  width: 1000px;
+  height: 800px;
+  background-color: white;
+}
+
+.textContainer {
+  width: 400px;
+}
+
+.img {
+  justify-self: flex-end;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -20px;
+}
+
+.img img {
+  height: 800px;
+}
