@@ -38,6 +38,20 @@
   font-size: 24px;
 }
 
+.navbarLinks li:after {
+  content: "";
+  display: flex;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: 50%;
+  border-bottom: 2px solid;
+}
+
+.navbarLinks li:hover:after {
+  transform-origin: 50%;
+  transform: scaleX(1);
+}
+
 .sidebarContainer {
   display: flex;
   justify-content: flex-end;

@@ -8,8 +8,25 @@ import { SidebarData } from "./SidebarData";
 
 export default function Navbar({ children }) {
   const [sidebar, setSidebar] = useState(false);
+  const [showPage, setShowPage] = useState(0);
 
-  const toggleSidebar = () => {
+  const homeStyled = () => {
+    if (showPage === 0) return { borderBottom: "solid 2px" };
+  };
+
+  const contactStyled = () => {
+    if (showPage === 1) return { borderBottom: "solid 2px" };
+  };
+
+  const exploreStyled = () => {
+    if (showPage === 2) return { borderBottom: "solid 2px" };
+  };
+
+  const handleToggle = (tab) => {
+    setShowPage(tab);
+  };
+
+  const openSidebar = () => {
     if (sidebar) {
       setSidebar(false);
     } else {
@@ -52,31 +69,62 @@ export default function Navbar({ children }) {
               <div className={s.appLogo}>
                 <Image src={Logo} alt="" />
               </div>
-              <h1 className={s.title}>Destinations</h1>
+              <h1
+                className={s.title}
+                onClick={() => {
+                  handleToggle(0);
+                  closeSidebar();
+                }}
+              >
+                Destinations
+              </h1>
             </a>
           </Link>
         </div>
         <ul className={s.navbarLinks}>
           <li>
             <Link href="/">
-              <a onClick={closeSidebar}>Home</a>
+              <a
+                onClick={() => {
+                  handleToggle(0);
+                  closeSidebar();
+                }}
+                style={homeStyled()}
+              >
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a onClick={closeSidebar}>Contact</a>
+              <a
+                onClick={() => {
+                  handleToggle(1);
+                  closeSidebar();
+                }}
+                style={contactStyled()}
+              >
+                Contact
+              </a>
             </Link>
           </li>
           <li>
             <Link href="" scroll={false}>
-              <a onClick={toggleSidebar}>Explore</a>
+              <a onClick={openSidebar} style={exploreStyled()}>
+                Explore
+              </a>
             </Link>
           </li>
         </ul>
       </nav>
       <div className={s.sidebarContainer}>
         <div className={s.sidebar} style={sidebarStyle()}>
-          <ul onClick={closeSidebar}>
+          <ul
+            onClick={() => {
+              handleToggle(2);
+              closeSidebar();
+            }}
+          >
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={s.navText}>

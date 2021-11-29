@@ -11,18 +11,19 @@
   display: flex;
   width: 1000px;
   height: 800px;
-  background-color: white;
+  background-image: url(https://image.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .textContainer {
-  width: 400px;
+  width: 450px;
   padding-left: 30px;
   padding-top: 70px;
 }
 
 .textContainer h1 {
   font-size: 72px;
+  font-family: var(--raleway);
 }
 
 .textContainer h1:before {
@@ -34,6 +35,7 @@
 
 .textContainer p {
   font-size: 20px;
+  line-height: 26px;
 }
 
 .button {
@@ -41,19 +43,18 @@
   width: 200px;
   margin-top: 50px;
   padding: 8px 0;
-  background: rgb(225, 225, 225);
+  background: var(--green);
   font-size: 28px;
   font-weight: bold;
   font-family: var(--raleway);
-  color: rgb(17, 17, 17);
+  color: white;
   letter-spacing: 1px;
   cursor: pointer;
-  border-bottom: solid 4px var(--green);
   transition: 0.5s;
 }
 
 .button:hover {
-  background-color: rgb(205, 205, 205);
+  background-color: #94d87b;
   transition: 0.5s;
 }
 
