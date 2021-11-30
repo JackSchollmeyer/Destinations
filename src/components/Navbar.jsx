@@ -8,25 +8,8 @@ import { SidebarData } from "./SidebarData";
 
 export default function Navbar({ children }) {
   const [sidebar, setSidebar] = useState(false);
-  const [showPage, setShowPage] = useState(0);
 
-  const homeStyled = () => {
-    if (showPage === 0) return { borderBottom: "solid 2px" };
-  };
-
-  const contactStyled = () => {
-    if (showPage === 1) return { borderBottom: "solid 2px" };
-  };
-
-  const exploreStyled = () => {
-    if (showPage === 2) return { borderBottom: "solid 2px" };
-  };
-
-  const handleToggle = (tab) => {
-    setShowPage(tab);
-  };
-
-  const openSidebar = () => {
+  const toggleSidebar = () => {
     if (sidebar) {
       setSidebar(false);
     } else {
@@ -54,10 +37,29 @@ export default function Navbar({ children }) {
   };
 
   const router = useRouter();
+
   const setNavbarStyle = () => {
     if (router.pathname !== "/foresty") {
       return { position: "fixed" };
     }
+  };
+
+  const homeStyled = () => {
+    if (router.pathname === "/") return { borderBottom: "solid 2px" };
+  };
+
+  const contactStyled = () => {
+    if (router.pathname === "/contact") return { borderBottom: "solid 2px" };
+  };
+
+  const exploreStyled = () => {
+    if (
+      router.pathname === "/tropical" ||
+      router.pathname === "/mountainous" ||
+      router.pathname === "/dryland" ||
+      router.pathname === "/arctic"
+    )
+      return { borderBottom: "solid 2px" };
   };
 
   return (
@@ -69,13 +71,7 @@ export default function Navbar({ children }) {
               <div className={s.appLogo}>
                 <Image src={Logo} alt="" />
               </div>
-              <h1
-                className={s.title}
-                onClick={() => {
-                  handleToggle(0);
-                  closeSidebar();
-                }}
-              >
+              <h1 className={s.title} onClick={closeSidebar}>
                 Destinations
               </h1>
             </a>
@@ -84,33 +80,21 @@ export default function Navbar({ children }) {
         <ul className={s.navbarLinks}>
           <li>
             <Link href="/">
-              <a
-                onClick={() => {
-                  handleToggle(0);
-                  closeSidebar();
-                }}
-                style={homeStyled()}
-              >
+              <a onClick={closeSidebar} style={homeStyled()}>
                 Home
               </a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a
-                onClick={() => {
-                  handleToggle(1);
-                  closeSidebar();
-                }}
-                style={contactStyled()}
-              >
+              <a onClick={closeSidebar} style={contactStyled()}>
                 Contact
               </a>
             </Link>
           </li>
           <li>
             <Link href="" scroll={false}>
-              <a onClick={openSidebar} style={exploreStyled()}>
+              <a onClick={toggleSidebar} style={exploreStyled()}>
                 Explore
               </a>
             </Link>
@@ -119,12 +103,7 @@ export default function Navbar({ children }) {
       </nav>
       <div className={s.sidebarContainer}>
         <div className={s.sidebar} style={sidebarStyle()}>
-          <ul
-            onClick={() => {
-              handleToggle(2);
-              closeSidebar();
-            }}
-          >
+          <ul onClick={closeSidebar}>
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={s.navText}>

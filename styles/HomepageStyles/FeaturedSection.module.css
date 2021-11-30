@@ -11,7 +11,7 @@
   grid-template-rows: 300px 300px 300px 300px 100px 300px 300px 300px 300px;
   gap: 10px 20px;
   margin: 200px auto;
-  color: rgb(17, 17, 17);
+  color: var(--grey);
 }
 
 .header {
@@ -19,8 +19,18 @@
   grid-row: 1;
   align-self: center;
   font-family: var(--raleway);
-  font-size: 64px;
+  font-size: 72px;
   font-weight: normal;
+  border-left: solid 6px var(--green);
+  padding-left: 8px;
+}
+
+.header:before {
+  content: "";
+  display: flex;
+  border-top: solid 6px var(--green);
+  width: 260px;
+  margin-left: -8px;
 }
 
 .card1 {
@@ -58,9 +68,23 @@
 .tallCard {
   grid-column: 1;
   grid-row: 2/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 600px;
   height: 910px;
-  background-color: white;
+  background-image: url(../../src/public/waterfallTinted.jpg);
+  background-position: center;
+}
+
+.tallCard h1 {
+  text-align: center;
+  line-height: 260px;
+  font-size: 124px;
+  font-weight: normal;
+  font-family: var(--raleway);
+  color: white;
+  text-transform: uppercase;
 }
 
 .wideCard {
@@ -68,7 +92,22 @@
   grid-row: 6/8;
   width: 1220px;
   height: 600px;
-  background-color: white;
+  background-image: url(../../src/public/worldGlobeTinted.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.wideCard h1 {
+  margin-left: 50px;
+  margin-top: 50px;
+  font-size: 112px;
+  color: white;
+  font-weight: normal;
+  font-family: var(--raleway);
+}
+
+.wideCard h1 span {
+  font-family: var(--roboto);
 }
 
 .grid img {
@@ -81,7 +120,14 @@
   grid-row: 5;
   text-align: center;
   align-self: center;
-  font-size: 48px;
+  background: linear-gradient(
+    90deg,
+    rgb(225, 225, 225),
+    white,
+    rgb(225, 225, 225)
+  );
+  font-size: 36px;
+  font-family: var(--raleway);
 }
 
 .whiteContainer {

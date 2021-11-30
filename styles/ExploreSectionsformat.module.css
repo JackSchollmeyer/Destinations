@@ -1,8 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
-  background-size: cover;
-  background: linear-gradient(rgb(30, 30, 30), rgb(100, 100, 100));
+  background-color: rgb(225, 225, 225);
 }
 
 .grid {
@@ -18,7 +17,7 @@
   font-size: 102px;
   font-family: var(--raleway);
   font-weight: normal;
-  color: white;
+  color: var(--grey);
   letter-spacing: 4px;
 }
 

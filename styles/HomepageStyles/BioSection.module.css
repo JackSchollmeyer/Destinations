@@ -13,6 +13,7 @@
   height: 800px;
   background-image: url(https://image.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--grey);
 }
 
 .textContainer {

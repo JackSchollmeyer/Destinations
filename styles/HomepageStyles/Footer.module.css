@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   height: fit-content;
-  background-color: rgb(17, 17, 17);
+  background-color: var(--grey);
   overflow: hidden;
   font-family: var(--raleway);
 }

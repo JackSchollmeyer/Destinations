@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import s from "../../../styles/Homepagestyles/FeaturedSection.module.css";
 import TheAzores from "../../public/tropical/theAzores.jpg";
-import KhaoPhingKan from "../../public/tropical/khaoPhingKan.jpg";
 import Matterhorn from "../../public/mountainous/matterhorn.jpg";
-import MountFuji from "../../public/mountainous/mountFuji.jpg";
 import Sahara from "../../public/dryland/sahara.jpg";
 import TheArcticHenge from "../../public/arctic/theArcticHenge.jpg";
 
@@ -15,7 +13,13 @@ export default function FeaturedSection() {
       <div className={s.grid}>
         <h1 className={s.header}>Check out What's popular</h1>
         <div className={s.tallCard}>
-          {/* <Image src={Matterhorn} alt="Sahara" /> */}
+          <h1>
+            Take
+            <br />
+            - A -
+            <br />
+            Journey
+          </h1>
         </div>
         <div className={s.card1}>
           <Image src={TheAzores} alt="The Azores" />
@@ -47,7 +51,10 @@ export default function FeaturedSection() {
         </div>
         <p>New locations added weekly!</p>
         <div className={s.wideCard}>
-          {/* <Image src={TheArcticHenge} alt="The Arctic Henge" /> */}
+          <h1>
+            <span>30</span>+ destinations around the
+            <br /> globe
+          </h1>
         </div>
         <div className={s.card3}>
           <Image src={TheArcticHenge} alt="The Arctic Henge" />
@@ -67,7 +74,8 @@ export default function FeaturedSection() {
           <Image src={Sahara} alt="Sahara" />
           <div className={s.whiteContainer}>
             <label className={s.labels}>
-              Take an adventure through the largest hot desert in the world
+              Take an adventure through the dunes of the largest hot desert in
+              the world
             </label>
             <div className={s.links}>
               <Link href="/dryland">
