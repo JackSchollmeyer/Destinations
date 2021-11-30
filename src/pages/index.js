@@ -18,11 +18,8 @@ export default function Home() {
               <span className={s.headerSpan3}>World</span>
             </h1>
             <p>
-              Dive into the unknown to reimagine the world that we live in. Find
-              new and exciting locations where you can admire their natural
-              beauty, learn facts about them and where they’re located, and
-              maybe even feel inspired to do some adventuring of your own to
-              find places that you'd like to see on the site.
+              This is the place to find new and exciting locations, learn about
+              their history, and simply admire their natural beauty.
             </p>
             <div className={s.buttonContainer}>
               <div className={s.callToActionButtons}>

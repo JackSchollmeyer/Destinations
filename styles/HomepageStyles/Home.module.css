@@ -12,7 +12,7 @@
     rgba(17, 17, 17, 0.5) 90%,
     transparent
   );
-  height: fit-content;
+  height: 100vh;
   padding: 80px 0 100px 100px;
 }
 
