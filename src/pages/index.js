@@ -18,16 +18,17 @@ export default function Home() {
               <span className={s.headerSpan3}>World</span>
             </h1>
             <p>
-              This is the place to find new and exciting locations, learn about
-              their history, and simply admire their natural beauty.
+              Explore the unique beauty of various regions throughout the
+              fascinating world that God created. Unveil new and inspiring
+              places and learn about what makes them extraordinary.
             </p>
             <div className={s.buttonContainer}>
-              <div className={s.callToActionButtons}>
-                <Link href="/tropical">See Gallery</Link>
-              </div>
-              <div className={s.callToActionButtons}>
-                <Link href="/contact">Make a Request</Link>
-              </div>
+              <Link href="/tropical">
+                <a className={s.callToActionButtons}>See Gallery</a>
+              </Link>
+              <Link href="/contact">
+                <a className={s.callToActionButtons}>Make a Request</a>
+              </Link>
             </div>
           </div>
         </div>

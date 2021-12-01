@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimateSharedLayout } from "framer-motion";
 import s from "../../../styles/LocationCard.module.css";
 
 export default function LocationCard({

@@ -28,9 +28,9 @@ export default function FeaturedSection() {
               Admire the beauty of a breathtaking island with its circular form
               and volcanic properties
             </label>
-            <div className={s.links}>
+            <div className={s.linksBox}>
               <Link href="/tropical">
-                <a>more</a>
+                <a className={s.links}>more</a>
               </Link>
             </div>
           </div>
@@ -42,9 +42,9 @@ export default function FeaturedSection() {
               See one of the most fascinating mountains in the world, with its
               nearly perfect pyramid shape
             </label>
-            <div className={s.links}>
+            <div className={s.linksBox}>
               <Link href="/mountainous">
-                <a>more</a>
+                <a className={s.links}>more</a>
               </Link>
             </div>
           </div>
@@ -63,9 +63,9 @@ export default function FeaturedSection() {
               Travel to Iceland to see a remarkable structure of arches and
               statues built from stone
             </label>
-            <div className={s.links}>
+            <div className={s.linksBox}>
               <Link href="/arctic">
-                <a>more</a>
+                <a className={s.links}>more</a>
               </Link>
             </div>
           </div>
@@ -77,9 +77,9 @@ export default function FeaturedSection() {
               Take an adventure through the dunes of the largest hot desert in
               the world
             </label>
-            <div className={s.links}>
+            <div className={s.linksBox}>
               <Link href="/dryland">
-                <a>more</a>
+                <a className={s.links}>more</a>
               </Link>
             </div>
           </div>

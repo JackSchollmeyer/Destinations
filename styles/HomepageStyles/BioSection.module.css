@@ -40,6 +40,7 @@
 }
 
 .button {
+  display: block;
   text-align: center;
   width: 200px;
   margin-top: 50px;
